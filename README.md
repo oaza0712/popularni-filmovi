@@ -17,7 +17,7 @@
 
 ### **Jezik** 
 - **hrvatski:** nazivi atributa             
-- **engleski:** imena filmova i nagrada
+- **engleski:** imena filmova, nagrada i drzava
 
 ### **Format datuma i vremena:** 
 ISO 8601
