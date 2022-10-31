@@ -16,7 +16,7 @@
 1.0
 
 ### **Jezik** 
-- **hrvatski:** nazivi atributa             
+- **hrvatski:** nazivi atributa, zarnova              
 - **engleski:** imena filmova, nagrada i drzava
 
 ### **Format datuma i vremena:** 
