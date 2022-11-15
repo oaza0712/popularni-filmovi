@@ -24,7 +24,7 @@ __webpack_require__.r(__webpack_exports__);
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
 
-var _jsxFileName = "C:\\Users\\38599\\Desktop\\Lab2\\lab2\\src\\App.js",
+var _jsxFileName = "C:\\Users\\38599\\Documents\\GitHub\\popularni-filmovi\\Lab2\\src\\App.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -151,7 +151,7 @@ __webpack_require__.r(__webpack_exports__);
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
 
-var _jsxFileName = "C:\\Users\\38599\\Desktop\\Lab2\\lab2\\src\\Components\\datatable.js",
+var _jsxFileName = "C:\\Users\\38599\\Documents\\GitHub\\popularni-filmovi\\Lab2\\src\\Components\\datatable.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -335,7 +335,6 @@ function Datatable() {
         type: "button",
         onClick: exportToJson,
         children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxDEV)("u", {
-          style: "color: blue;",
           children: "Export to JSON"
         }, void 0, false, {
           fileName: _jsxFileName,
@@ -662,7 +661,7 @@ __webpack_require__.r(__webpack_exports__);
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
 
-var _jsxFileName = "C:\\Users\\38599\\Desktop\\Lab2\\lab2\\src\\Components\\downloadFile.js";
+var _jsxFileName = "C:\\Users\\38599\\Documents\\GitHub\\popularni-filmovi\\Lab2\\src\\Components\\downloadFile.js";
 
 
 class DownloadFile extends (react__WEBPACK_IMPORTED_MODULE_0___default().Component) {
@@ -792,7 +791,7 @@ __webpack_require__.r(__webpack_exports__);
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
 
-var _jsxFileName = "C:\\Users\\38599\\Desktop\\Lab2\\lab2\\src\\Components\\home.js";
+var _jsxFileName = "C:\\Users\\38599\\Documents\\GitHub\\popularni-filmovi\\Lab2\\src\\Components\\home.js";
 
 
 
@@ -1107,7 +1106,7 @@ __webpack_require__.r(__webpack_exports__);
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
 
-var _jsxFileName = "C:\\Users\\38599\\Desktop\\Lab2\\lab2\\src\\index.js";
+var _jsxFileName = "C:\\Users\\38599\\Documents\\GitHub\\popularni-filmovi\\Lab2\\src\\index.js";
 
 
 
@@ -67139,7 +67138,7 @@ function _setPrototypeOf(o, p) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("c926408163e5f43bd098")
+/******/ 		__webpack_require__.h = () => ("74e1d74b8f1718cd9ed3")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

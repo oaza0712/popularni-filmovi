@@ -33,7 +33,10 @@ export default function Home() {
               distribuirati i izvoditi djelo, čak i u komercijalne svrhe, sve
               bez traženja dopuštenja.
             </div>
+            </div>
           </div>
+          <div></div>
+
           <div>
             <h3>Jezik</h3>
             
@@ -45,12 +48,16 @@ export default function Home() {
           <div>ISO 8601</div>
           <h3>Ključne riječi</h3>
           <div>film, redatelj, glumci, zarn, nagrada</div>
-        </div>
-        <div>
+          <div></div>
+
+        <div class="meta">
           <h3>Popis atributa</h3>
           
             <div>ime_filma</div>
             <div>zarn</div>
+            <div>datum_izdavanja</div>
+            <div>trajanje_min</div>
+            <div>ocjena</div>
             <div>drzava</div>
             <div>redatelj</div>
             <div>glumci</div>
@@ -59,6 +66,7 @@ export default function Home() {
             <div>budzet</div>
           
         </div>
+        <div></div>
         <div>
           <h3>Datum objavljivanja</h3>
           <div>2022-10-31</div>
