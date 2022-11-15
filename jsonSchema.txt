@@ -1,0 +1,2431 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "array",
+    "default": [],
+    "title": "Root Schema",
+    "items": {
+        "type": "object",
+        "title": "A Schema",
+        "required": [
+            "ime_film",
+            "datum_izdavanja",
+            "ocjena",
+            "trajanje_min",
+            "zarn",
+            "drzava",
+            "redatelj",
+            "glumci",
+            "nagrade",
+            "box_office",
+            "budzet"
+        ],
+        "properties": {
+            "ime_film": {
+                "type": "string",
+                "title": "The ime_film Schema",
+                "examples": [
+                    "Interstellar",
+                    "Avatar",
+                    "Harry Potter and the Philosophers Stone",
+                    "Free guy",
+                    "Twilight",
+                    "The Twilight Saga: New Moon",
+                    "The Twilight Saga: Breaking Dawn – Part 1",
+                    "The Twilight Saga: Breaking Dawn – Part 2",
+                    "The Twilight Saga: Eclipse",
+                    "Titanic",
+                    "Love Actually",
+                    "Kill Bill",
+                    "Kill Bill 2",
+                    "The Amazing Spiderman",
+                    "The Amazing Spiderman 2"
+                ]
+            },
+            "datum_izdavanja": {
+                "type": "string",
+                "title": "The datum_izdavanja Schema",
+                "examples": [
+                    "2014-09-05",
+                    "2009-12-10",
+                    "2001-11-04",
+                    "2021-10-10",
+                    "2008-11-17",
+                    "2009-11-16",
+                    "2011-10-30",
+                    "2012-11-16",
+                    "2010-06-30",
+                    "1997-11-01",
+                    "2003-11-14",
+                    "2004-12-11",
+                    "2004-04-08",
+                    "2012-07-03"
+                ]
+            },
+            "ocjena": {
+                "type": [
+                    "number",
+                    "integer"
+                ],
+                "title": "The ocjena Schema",
+                "examples": [
+                    8.6,
+                    7.8,
+                    7.6,
+                    7.1,
+                    5.3,
+                    4.7,
+                    4.9,
+                    5.5,
+                    5,
+                    7.9,
+                    8.2,
+                    8,
+                    6.9,
+                    6.6
+                ]
+            },
+            "trajanje_min": {
+                "type": "integer",
+                "title": "The trajanje_min Schema",
+                "examples": [
+                    196,
+                    162,
+                    152,
+                    115,
+                    121,
+                    130,
+                    117,
+                    123,
+                    195,
+                    136,
+                    111,
+                    137,
+                    142
+                ]
+            },
+            "zarn": {
+                "type": "array",
+                "title": "The zarn Schema",
+                "items": {
+                    "type": "object",
+                    "title": "A Schema",
+                    "required": [
+                        "ime_zarn"
+                    ],
+                    "properties": {
+                        "ime_zarn": {
+                            "type": "string",
+                            "title": "The ime_zarn Schema",
+                            "examples": [
+                                "drama",
+                                "sci-fi",
+                                "fikcija",
+                                "avanturistièki",
+                                "komedija",
+                                "akcija",
+                                "romansa",
+                                "povijesni",
+                                "krimiæ"
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "ime_zarn": "drama"
+                    },
+                    {
+                        "ime_zarn": "sci-fi"
+                    },
+                    {
+                        "ime_zarn": "fikcija"
+                    },
+                    {
+                        "ime_zarn": "avanturistièki"
+                    },
+                    {
+                        "ime_zarn": "fikcija"
+                    },
+                    {
+                        "ime_zarn": "komedija"
+                    },
+                    {
+                        "ime_zarn": "akcija"
+                    },
+                    {
+                        "ime_zarn": "romansa"
+                    },
+                    {
+                        "ime_zarn": "fikcija"
+                    },
+                    {
+                        "ime_zarn": "romansa"
+                    },
+                    {
+                        "ime_zarn": "fikcija"
+                    },
+                    {
+                        "ime_zarn": "romansa"
+                    },
+                    {
+                        "ime_zarn": "fikcija"
+                    },
+                    {
+                        "ime_zarn": "romansa"
+                    },
+                    {
+                        "ime_zarn": "fikcija"
+                    },
+                    {
+                        "ime_zarn": "romansa"
+                    },
+                    {
+                        "ime_zarn": "fikcija"
+                    },
+                    {
+                        "ime_zarn": "romansa"
+                    },
+                    {
+                        "ime_zarn": "povijesni"
+                    },
+                    {
+                        "ime_zarn": "drama"
+                    },
+                    {
+                        "ime_zarn": "romansa"
+                    },
+                    {
+                        "ime_zarn": "akcija"
+                    },
+                    {
+                        "ime_zarn": "krimiæ"
+                    },
+                    {
+                        "ime_zarn": "akcija"
+                    },
+                    {
+                        "ime_zarn": "krimiæ"
+                    },
+                    {
+                        "ime_zarn": "sci-fi"
+                    },
+                    {
+                        "ime_zarn": "akcija"
+                    },
+                    {
+                        "ime_zarn": "sci-fi"
+                    },
+                    {
+                        "ime_zarn": "akcija"
+                    }]
+                },
+                "examples": [
+                    [{
+                        "ime_zarn": "drama"
+                    },
+                    {
+                        "ime_zarn": "sci-fi"
+                    }],
+                    [{
+                        "ime_zarn": "fikcija"
+                    },
+                    {
+                        "ime_zarn": "avanturistièki"
+                    }],
+                    [{
+                        "ime_zarn": "fikcija"
+                    }],
+                    [{
+                        "ime_zarn": "komedija"
+                    },
+                    {
+                        "ime_zarn": "akcija"
+                    }],
+                    [{
+                        "ime_zarn": "romansa"
+                    },
+                    {
+                        "ime_zarn": "fikcija"
+                    }],
+                    [{
+                        "ime_zarn": "romansa"
+                    },
+                    {
+                        "ime_zarn": "fikcija"
+                    }],
+                    [{
+                        "ime_zarn": "romansa"
+                    },
+                    {
+                        "ime_zarn": "fikcija"
+                    }],
+                    [{
+                        "ime_zarn": "romansa"
+                    },
+                    {
+                        "ime_zarn": "fikcija"
+                    }],
+                    [{
+                        "ime_zarn": "romansa"
+                    },
+                    {
+                        "ime_zarn": "fikcija"
+                    }],
+                    [{
+                        "ime_zarn": "romansa"
+                    },
+                    {
+                        "ime_zarn": "povijesni"
+                    }],
+                    [{
+                        "ime_zarn": "drama"
+                    },
+                    {
+                        "ime_zarn": "romansa"
+                    }],
+                    [{
+                        "ime_zarn": "akcija"
+                    },
+                    {
+                        "ime_zarn": "krimiæ"
+                    }],
+                    [{
+                        "ime_zarn": "akcija"
+                    },
+                    {
+                        "ime_zarn": "krimiæ"
+                    }],
+                    [{
+                        "ime_zarn": "sci-fi"
+                    },
+                    {
+                        "ime_zarn": "akcija"
+                    }],
+                    [{
+                        "ime_zarn": "sci-fi"
+                    },
+                    {
+                        "ime_zarn": "akcija"
+                    }]
+                ]
+            },
+            "drzava": {
+                "type": "array",
+                "title": "The drzava Schema",
+                "items": {
+                    "type": "object",
+                    "title": "A Schema",
+                    "required": [
+                        "ime_drzava"
+                    ],
+                    "properties": {
+                        "ime_drzava": {
+                            "type": "string",
+                            "title": "The ime_drzava Schema",
+                            "examples": [
+                                "United Kingdom",
+                                "United States"
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "ime_drzava": "United Kingdom"
+                    },
+                    {
+                        "ime_drzava": "United States"
+                    },
+                    {
+                        "ime_drzava": "United States"
+                    },
+                    {
+                        "ime_drzava": "United Kingdom"
+                    },
+                    {
+                        "ime_drzava": "United States"
+                    },
+                    {
+                        "ime_drzava": "United States"
+                    },
+                    {
+                        "ime_drzava": "United States"
+                    },
+                    {
+                        "ime_drzava": "United States"
+                    },
+                    {
+                        "ime_drzava": "United States"
+                    },
+                    {
+                        "ime_drzava": "United States"
+                    },
+                    {
+                        "ime_drzava": "United States"
+                    },
+                    {
+                        "ime_drzava": "United States"
+                    },
+                    {
+                        "ime_drzava": "United Kingdom"
+                    },
+                    {
+                        "ime_drzava": "United States"
+                    },
+                    {
+                        "ime_drzava": "United States"
+                    },
+                    {
+                        "ime_drzava": "United States"
+                    },
+                    {
+                        "ime_drzava": "United States"
+                    }]
+                },
+                "examples": [
+                    [{
+                        "ime_drzava": "United Kingdom"
+                    },
+                    {
+                        "ime_drzava": "United States"
+                    }],
+                    [{
+                        "ime_drzava": "United States"
+                    }],
+                    [{
+                        "ime_drzava": "United Kingdom"
+                    },
+                    {
+                        "ime_drzava": "United States"
+                    }],
+                    [{
+                        "ime_drzava": "United States"
+                    }],
+                    [{
+                        "ime_drzava": "United States"
+                    }],
+                    [{
+                        "ime_drzava": "United States"
+                    }],
+                    [{
+                        "ime_drzava": "United States"
+                    }],
+                    [{
+                        "ime_drzava": "United States"
+                    }],
+                    [{
+                        "ime_drzava": "United States"
+                    }],
+                    [{
+                        "ime_drzava": "United States"
+                    }],
+                    [{
+                        "ime_drzava": "United Kingdom"
+                    }],
+                    [{
+                        "ime_drzava": "United States"
+                    }],
+                    [{
+                        "ime_drzava": "United States"
+                    }],
+                    [{
+                        "ime_drzava": "United States"
+                    }],
+                    [{
+                        "ime_drzava": "United States"
+                    }]
+                ]
+            },
+            "redatelj": {
+                "type": "array",
+                "title": "The redatelj Schema",
+                "items": {
+                    "type": "object",
+                    "title": "A Schema",
+                    "required": [
+                        "ime_redatelj",
+                        "prezime_redatelj"
+                    ],
+                    "properties": {
+                        "ime_redatelj": {
+                            "type": "string",
+                            "title": "The ime_redatelj Schema",
+                            "examples": [
+                                "Christopher",
+                                "James",
+                                "Chris",
+                                "Shawn",
+                                "Catharine",
+                                "Bill",
+                                "David",
+                                "Richard",
+                                "Quentin",
+                                "Marc"
+                            ]
+                        },
+                        "prezime_redatelj": {
+                            "type": "string",
+                            "title": "The prezime_redatelj Schema",
+                            "examples": [
+                                "Nolan",
+                                "Cameron",
+                                "Columbus",
+                                "Levy",
+                                "Hardwick",
+                                "Condon",
+                                "Slade",
+                                "Curtis",
+                                "Tarantino",
+                                "Webb"
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "ime_redatelj": "Christopher",
+                        "prezime_redatelj": "Nolan"
+                    },
+                    {
+                        "ime_redatelj": "James",
+                        "prezime_redatelj": "Cameron"
+                    },
+                    {
+                        "ime_redatelj": "Chris",
+                        "prezime_redatelj": "Columbus"
+                    },
+                    {
+                        "ime_redatelj": "Shawn",
+                        "prezime_redatelj": "Levy"
+                    },
+                    {
+                        "ime_redatelj": "Catharine",
+                        "prezime_redatelj": "Hardwick"
+                    },
+                    {
+                        "ime_redatelj": "Catharine",
+                        "prezime_redatelj": "Hardwick"
+                    },
+                    {
+                        "ime_redatelj": "Bill",
+                        "prezime_redatelj": "Condon"
+                    },
+                    {
+                        "ime_redatelj": "Bill",
+                        "prezime_redatelj": "Condon"
+                    },
+                    {
+                        "ime_redatelj": "David",
+                        "prezime_redatelj": "Slade"
+                    },
+                    {
+                        "ime_redatelj": "James",
+                        "prezime_redatelj": "Cameron"
+                    },
+                    {
+                        "ime_redatelj": "Richard",
+                        "prezime_redatelj": "Curtis"
+                    },
+                    {
+                        "ime_redatelj": "Quentin",
+                        "prezime_redatelj": "Tarantino"
+                    },
+                    {
+                        "ime_redatelj": "Quentin",
+                        "prezime_redatelj": "Tarantino"
+                    },
+                    {
+                        "ime_redatelj": "Marc",
+                        "prezime_redatelj": "Webb"
+                    },
+                    {
+                        "ime_redatelj": "Marc",
+                        "prezime_redatelj": "Webb"
+                    }]
+                },
+                "examples": [
+                    [{
+                        "ime_redatelj": "Christopher",
+                        "prezime_redatelj": "Nolan"
+                    }],
+                    [{
+                        "ime_redatelj": "James",
+                        "prezime_redatelj": "Cameron"
+                    }],
+                    [{
+                        "ime_redatelj": "Chris",
+                        "prezime_redatelj": "Columbus"
+                    }],
+                    [{
+                        "ime_redatelj": "Shawn",
+                        "prezime_redatelj": "Levy"
+                    }],
+                    [{
+                        "ime_redatelj": "Catharine",
+                        "prezime_redatelj": "Hardwick"
+                    }],
+                    [{
+                        "ime_redatelj": "Catharine",
+                        "prezime_redatelj": "Hardwick"
+                    }],
+                    [{
+                        "ime_redatelj": "Bill",
+                        "prezime_redatelj": "Condon"
+                    }],
+                    [{
+                        "ime_redatelj": "Bill",
+                        "prezime_redatelj": "Condon"
+                    }],
+                    [{
+                        "ime_redatelj": "David",
+                        "prezime_redatelj": "Slade"
+                    }],
+                    [{
+                        "ime_redatelj": "James",
+                        "prezime_redatelj": "Cameron"
+                    }],
+                    [{
+                        "ime_redatelj": "Richard",
+                        "prezime_redatelj": "Curtis"
+                    }],
+                    [{
+                        "ime_redatelj": "Quentin",
+                        "prezime_redatelj": "Tarantino"
+                    }],
+                    [{
+                        "ime_redatelj": "Quentin",
+                        "prezime_redatelj": "Tarantino"
+                    }],
+                    [{
+                        "ime_redatelj": "Marc",
+                        "prezime_redatelj": "Webb"
+                    }],
+                    [{
+                        "ime_redatelj": "Marc",
+                        "prezime_redatelj": "Webb"
+                    }]
+                ]
+            },
+            "glumci": {
+                "type": "array",
+                "title": "The glumci Schema",
+                "items": {
+                    "type": "object",
+                    "title": "A Schema",
+                    "required": [
+                        "ime_glumac",
+                        "prezime_glumac"
+                    ],
+                    "properties": {
+                        "ime_glumac": {
+                            "type": "string",
+                            "title": "The ime_glumac Schema",
+                            "examples": [
+                                "Matthew",
+                                "Anne",
+                                "Jessica",
+                                "Sam",
+                                "Zoe",
+                                "Sigourney",
+                                "Daniel",
+                                "Rupert",
+                                "Emma",
+                                "Dwayne",
+                                "Ryan",
+                                "Jodie",
+                                "Kristen",
+                                "Robert",
+                                "Taylor",
+                                "Kate",
+                                "Billy",
+                                "Leonardo",
+                                "Hugh",
+                                "Liam",
+                                "Uma",
+                                "David",
+                                "Daryl",
+                                "Lucy",
+                                "Andrew",
+                                "Stan"
+                            ]
+                        },
+                        "prezime_glumac": {
+                            "type": "string",
+                            "title": "The prezime_glumac Schema",
+                            "examples": [
+                                "McConaughey",
+                                "Hathaway",
+                                "Chastain",
+                                "Worthington",
+                                "Saldana",
+                                "Weaver",
+                                "Radcliffe",
+                                "Grint",
+                                "Watson",
+                                "Johnson",
+                                "Reynolds",
+                                "Comer",
+                                "Stewart",
+                                "Pattinson",
+                                "Lautner",
+                                "Winslet",
+                                "Zane",
+                                "DiCaprio",
+                                "Grant",
+                                "Neeson",
+                                "Thompson",
+                                "Thurman",
+                                "Carradine",
+                                "Hannah",
+                                "Liu",
+                                "Garfield",
+                                "Stone",
+                                "Lee"
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "ime_glumac": "Matthew",
+                        "prezime_glumac": "McConaughey"
+                    },
+                    {
+                        "ime_glumac": "Anne",
+                        "prezime_glumac": "Hathaway"
+                    },
+                    {
+                        "ime_glumac": "Jessica",
+                        "prezime_glumac": "Chastain"
+                    },
+                    {
+                        "ime_glumac": "Sam",
+                        "prezime_glumac": "Worthington"
+                    },
+                    {
+                        "ime_glumac": "Zoe",
+                        "prezime_glumac": "Saldana"
+                    },
+                    {
+                        "ime_glumac": "Sigourney",
+                        "prezime_glumac": "Weaver"
+                    },
+                    {
+                        "ime_glumac": "Daniel",
+                        "prezime_glumac": "Radcliffe"
+                    },
+                    {
+                        "ime_glumac": "Rupert",
+                        "prezime_glumac": "Grint"
+                    },
+                    {
+                        "ime_glumac": "Emma",
+                        "prezime_glumac": "Watson"
+                    },
+                    {
+                        "ime_glumac": "Dwayne",
+                        "prezime_glumac": "Johnson"
+                    },
+                    {
+                        "ime_glumac": "Ryan",
+                        "prezime_glumac": "Reynolds"
+                    },
+                    {
+                        "ime_glumac": "Jodie",
+                        "prezime_glumac": "Comer"
+                    },
+                    {
+                        "ime_glumac": "Kristen",
+                        "prezime_glumac": "Stewart"
+                    },
+                    {
+                        "ime_glumac": "Robert",
+                        "prezime_glumac": "Pattinson"
+                    },
+                    {
+                        "ime_glumac": "Taylor",
+                        "prezime_glumac": "Lautner"
+                    },
+                    {
+                        "ime_glumac": "Kristen",
+                        "prezime_glumac": "Stewart"
+                    },
+                    {
+                        "ime_glumac": "Robert",
+                        "prezime_glumac": "Pattinson"
+                    },
+                    {
+                        "ime_glumac": "Taylor",
+                        "prezime_glumac": "Lautner"
+                    },
+                    {
+                        "ime_glumac": "Kristen",
+                        "prezime_glumac": "Stewart"
+                    },
+                    {
+                        "ime_glumac": "Robert",
+                        "prezime_glumac": "Pattinson"
+                    },
+                    {
+                        "ime_glumac": "Taylor",
+                        "prezime_glumac": "Lautner"
+                    },
+                    {
+                        "ime_glumac": "Kristen",
+                        "prezime_glumac": "Stewart"
+                    },
+                    {
+                        "ime_glumac": "Robert",
+                        "prezime_glumac": "Pattinson"
+                    },
+                    {
+                        "ime_glumac": "Taylor",
+                        "prezime_glumac": "Lautner"
+                    },
+                    {
+                        "ime_glumac": "Kristen",
+                        "prezime_glumac": "Stewart"
+                    },
+                    {
+                        "ime_glumac": "Robert",
+                        "prezime_glumac": "Pattinson"
+                    },
+                    {
+                        "ime_glumac": "Taylor",
+                        "prezime_glumac": "Lautner"
+                    },
+                    {
+                        "ime_glumac": "Kate",
+                        "prezime_glumac": "Winslet"
+                    },
+                    {
+                        "ime_glumac": "Billy",
+                        "prezime_glumac": "Zane"
+                    },
+                    {
+                        "ime_glumac": "Leonardo",
+                        "prezime_glumac": "DiCaprio"
+                    },
+                    {
+                        "ime_glumac": "Hugh",
+                        "prezime_glumac": "Grant"
+                    },
+                    {
+                        "ime_glumac": "Liam",
+                        "prezime_glumac": "Neeson"
+                    },
+                    {
+                        "ime_glumac": "Emma",
+                        "prezime_glumac": "Thompson"
+                    },
+                    {
+                        "ime_glumac": "Uma",
+                        "prezime_glumac": "Thurman"
+                    },
+                    {
+                        "ime_glumac": "David",
+                        "prezime_glumac": "Carradine"
+                    },
+                    {
+                        "ime_glumac": "Daryl",
+                        "prezime_glumac": "Hannah"
+                    },
+                    {
+                        "ime_glumac": "Emma",
+                        "prezime_glumac": "Thompson"
+                    },
+                    {
+                        "ime_glumac": "David",
+                        "prezime_glumac": "Carradine"
+                    },
+                    {
+                        "ime_glumac": "Lucy",
+                        "prezime_glumac": "Liu"
+                    },
+                    {
+                        "ime_glumac": "Andrew",
+                        "prezime_glumac": "Garfield"
+                    },
+                    {
+                        "ime_glumac": "Emma",
+                        "prezime_glumac": "Stone"
+                    },
+                    {
+                        "ime_glumac": "Stan",
+                        "prezime_glumac": "Lee"
+                    },
+                    {
+                        "ime_glumac": "Andrew",
+                        "prezime_glumac": "Garfield"
+                    },
+                    {
+                        "ime_glumac": "Emma",
+                        "prezime_glumac": "Stone"
+                    },
+                    {
+                        "ime_glumac": "Stan",
+                        "prezime_glumac": "Lee"
+                    }]
+                },
+                "examples": [
+                    [{
+                        "ime_glumac": "Matthew",
+                        "prezime_glumac": "McConaughey"
+                    },
+                    {
+                        "ime_glumac": "Anne",
+                        "prezime_glumac": "Hathaway"
+                    },
+                    {
+                        "ime_glumac": "Jessica",
+                        "prezime_glumac": "Chastain"
+                    }],
+                    [{
+                        "ime_glumac": "Sam",
+                        "prezime_glumac": "Worthington"
+                    },
+                    {
+                        "ime_glumac": "Zoe",
+                        "prezime_glumac": "Saldana"
+                    },
+                    {
+                        "ime_glumac": "Sigourney",
+                        "prezime_glumac": "Weaver"
+                    }],
+                    [{
+                        "ime_glumac": "Daniel",
+                        "prezime_glumac": "Radcliffe"
+                    },
+                    {
+                        "ime_glumac": "Rupert",
+                        "prezime_glumac": "Grint"
+                    },
+                    {
+                        "ime_glumac": "Emma",
+                        "prezime_glumac": "Watson"
+                    }],
+                    [{
+                        "ime_glumac": "Dwayne",
+                        "prezime_glumac": "Johnson"
+                    },
+                    {
+                        "ime_glumac": "Ryan",
+                        "prezime_glumac": "Reynolds"
+                    },
+                    {
+                        "ime_glumac": "Jodie",
+                        "prezime_glumac": "Comer"
+                    }],
+                    [{
+                        "ime_glumac": "Kristen",
+                        "prezime_glumac": "Stewart"
+                    },
+                    {
+                        "ime_glumac": "Robert",
+                        "prezime_glumac": "Pattinson"
+                    },
+                    {
+                        "ime_glumac": "Taylor",
+                        "prezime_glumac": "Lautner"
+                    }],
+                    [{
+                        "ime_glumac": "Kristen",
+                        "prezime_glumac": "Stewart"
+                    },
+                    {
+                        "ime_glumac": "Robert",
+                        "prezime_glumac": "Pattinson"
+                    },
+                    {
+                        "ime_glumac": "Taylor",
+                        "prezime_glumac": "Lautner"
+                    }],
+                    [{
+                        "ime_glumac": "Kristen",
+                        "prezime_glumac": "Stewart"
+                    },
+                    {
+                        "ime_glumac": "Robert",
+                        "prezime_glumac": "Pattinson"
+                    },
+                    {
+                        "ime_glumac": "Taylor",
+                        "prezime_glumac": "Lautner"
+                    }],
+                    [{
+                        "ime_glumac": "Kristen",
+                        "prezime_glumac": "Stewart"
+                    },
+                    {
+                        "ime_glumac": "Robert",
+                        "prezime_glumac": "Pattinson"
+                    },
+                    {
+                        "ime_glumac": "Taylor",
+                        "prezime_glumac": "Lautner"
+                    }],
+                    [{
+                        "ime_glumac": "Kristen",
+                        "prezime_glumac": "Stewart"
+                    },
+                    {
+                        "ime_glumac": "Robert",
+                        "prezime_glumac": "Pattinson"
+                    },
+                    {
+                        "ime_glumac": "Taylor",
+                        "prezime_glumac": "Lautner"
+                    }],
+                    [{
+                        "ime_glumac": "Kate",
+                        "prezime_glumac": "Winslet"
+                    },
+                    {
+                        "ime_glumac": "Billy",
+                        "prezime_glumac": "Zane"
+                    },
+                    {
+                        "ime_glumac": "Leonardo",
+                        "prezime_glumac": "DiCaprio"
+                    }],
+                    [{
+                        "ime_glumac": "Hugh",
+                        "prezime_glumac": "Grant"
+                    },
+                    {
+                        "ime_glumac": "Liam",
+                        "prezime_glumac": "Neeson"
+                    },
+                    {
+                        "ime_glumac": "Emma",
+                        "prezime_glumac": "Thompson"
+                    }],
+                    [{
+                        "ime_glumac": "Uma",
+                        "prezime_glumac": "Thurman"
+                    },
+                    {
+                        "ime_glumac": "David",
+                        "prezime_glumac": "Carradine"
+                    },
+                    {
+                        "ime_glumac": "Daryl",
+                        "prezime_glumac": "Hannah"
+                    }],
+                    [{
+                        "ime_glumac": "Emma",
+                        "prezime_glumac": "Thompson"
+                    },
+                    {
+                        "ime_glumac": "David",
+                        "prezime_glumac": "Carradine"
+                    },
+                    {
+                        "ime_glumac": "Lucy",
+                        "prezime_glumac": "Liu"
+                    }],
+                    [{
+                        "ime_glumac": "Andrew",
+                        "prezime_glumac": "Garfield"
+                    },
+                    {
+                        "ime_glumac": "Emma",
+                        "prezime_glumac": "Stone"
+                    },
+                    {
+                        "ime_glumac": "Stan",
+                        "prezime_glumac": "Lee"
+                    }],
+                    [{
+                        "ime_glumac": "Andrew",
+                        "prezime_glumac": "Garfield"
+                    },
+                    {
+                        "ime_glumac": "Emma",
+                        "prezime_glumac": "Stone"
+                    },
+                    {
+                        "ime_glumac": "Stan",
+                        "prezime_glumac": "Lee"
+                    }]
+                ]
+            },
+            "nagrade": {
+                "type": "array",
+                "title": "The nagrade Schema",
+                "items": {
+                    "type": "object",
+                    "title": "A Schema",
+                    "required": [
+                        "ime_nagrada",
+                        "datum_osvajanja"
+                    ],
+                    "properties": {
+                        "ime_nagrada": {
+                            "type": "string",
+                            "title": "The ime_nagrada Schema",
+                            "examples": [
+                                "Academy Award for Best Visual Effects",
+                                "Best Original Score",
+                                "Best Production Design",
+                                "Best Family Film",
+                                "Peoples Choice Awards",
+                                "Best Movie",
+                                "Best Kiss",
+                                "Best On-Screen Couple",
+                                "Choice Summer Movie",
+                                "Best Picture",
+                                "Best Performance by an Actor in a Supporting Role",
+                                "Best Actress",
+                                "Best Fight",
+                                "Kids Choice Award for Favorite Movie Actress"
+                            ]
+                        },
+                        "datum_osvajanja": {
+                            "type": "string",
+                            "title": "The datum_osvajanja Schema",
+                            "examples": [
+                                "2015-02-22",
+                                "2015-02-08",
+                                "2009-02-22",
+                                "2002-01-11",
+                                "2021-12-07",
+                                "2009-05-31",
+                                "2010-03-28",
+                                "2012-05-31",
+                                "2013-03-18",
+                                "2013-08-08",
+                                "1998-02-22",
+                                "2003-02-08",
+                                "2004-04-04",
+                                "2005-06-04",
+                                "2003-06-04",
+                                "2015-06-04"
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "ime_nagrada": "Academy Award for Best Visual Effects",
+                        "datum_osvajanja": "2015-02-22"
+                    },
+                    {
+                        "ime_nagrada": "Best Original Score",
+                        "datum_osvajanja": "2015-02-08"
+                    },
+                    {
+                        "ime_nagrada": "Best Production Design",
+                        "datum_osvajanja": "2015-02-08"
+                    },
+                    {
+                        "ime_nagrada": "Academy Award for Best Visual Effects",
+                        "datum_osvajanja": "2009-02-22"
+                    },
+                    {
+                        "ime_nagrada": "Best Family Film",
+                        "datum_osvajanja": "2002-01-11"
+                    },
+                    {
+                        "ime_nagrada": "Peoples Choice Awards",
+                        "datum_osvajanja": "2021-12-07"
+                    },
+                    {
+                        "ime_nagrada": "Best Movie",
+                        "datum_osvajanja": "2009-05-31"
+                    },
+                    {
+                        "ime_nagrada": "Best Movie",
+                        "datum_osvajanja": "2010-03-28"
+                    },
+                    {
+                        "ime_nagrada": "Best Kiss",
+                        "datum_osvajanja": "2012-05-31"
+                    },
+                    {
+                        "ime_nagrada": "Best On-Screen Couple",
+                        "datum_osvajanja": "2013-03-18"
+                    },
+                    {
+                        "ime_nagrada": "Choice Summer Movie",
+                        "datum_osvajanja": "2013-08-08"
+                    },
+                    {
+                        "ime_nagrada": "Best Original Score",
+                        "datum_osvajanja": "1998-02-22"
+                    },
+                    {
+                        "ime_nagrada": "Best Picture",
+                        "datum_osvajanja": "1998-02-22"
+                    },
+                    {
+                        "ime_nagrada": "Best Performance by an Actor in a Supporting Role",
+                        "datum_osvajanja": "2003-02-08"
+                    },
+                    {
+                        "ime_nagrada": "Best Actress",
+                        "datum_osvajanja": "2004-04-04"
+                    },
+                    {
+                        "ime_nagrada": "Best Fight",
+                        "datum_osvajanja": "2005-06-04"
+                    },
+                    {
+                        "ime_nagrada": "Best Kiss",
+                        "datum_osvajanja": "2003-06-04"
+                    },
+                    {
+                        "ime_nagrada": "Kids Choice Award for Favorite Movie Actress",
+                        "datum_osvajanja": "2015-06-04"
+                    }]
+                },
+                "examples": [
+                    [{
+                        "ime_nagrada": "Academy Award for Best Visual Effects",
+                        "datum_osvajanja": "2015-02-22"
+                    },
+                    {
+                        "ime_nagrada": "Best Original Score",
+                        "datum_osvajanja": "2015-02-08"
+                    },
+                    {
+                        "ime_nagrada": "Best Production Design",
+                        "datum_osvajanja": "2015-02-08"
+                    }],
+                    [{
+                        "ime_nagrada": "Academy Award for Best Visual Effects",
+                        "datum_osvajanja": "2009-02-22"
+                    }],
+                    [{
+                        "ime_nagrada": "Best Family Film",
+                        "datum_osvajanja": "2002-01-11"
+                    }],
+                    [{
+                        "ime_nagrada": "Peoples Choice Awards",
+                        "datum_osvajanja": "2021-12-07"
+                    }],
+                    [{
+                        "ime_nagrada": "Best Movie",
+                        "datum_osvajanja": "2009-05-31"
+                    }],
+                    [{
+                        "ime_nagrada": "Best Movie",
+                        "datum_osvajanja": "2010-03-28"
+                    }],
+                    [{
+                        "ime_nagrada": "Best Kiss",
+                        "datum_osvajanja": "2012-05-31"
+                    }],
+                    [{
+                        "ime_nagrada": "Best On-Screen Couple",
+                        "datum_osvajanja": "2013-03-18"
+                    }],
+                    [{
+                        "ime_nagrada": "Choice Summer Movie",
+                        "datum_osvajanja": "2013-08-08"
+                    }],
+                    [{
+                        "ime_nagrada": "Best Original Score",
+                        "datum_osvajanja": "1998-02-22"
+                    },
+                    {
+                        "ime_nagrada": "Best Picture",
+                        "datum_osvajanja": "1998-02-22"
+                    }],
+                    [{
+                        "ime_nagrada": "Best Performance by an Actor in a Supporting Role",
+                        "datum_osvajanja": "2003-02-08"
+                    }],
+                    [{
+                        "ime_nagrada": "Best Actress",
+                        "datum_osvajanja": "2004-04-04"
+                    }],
+                    [{
+                        "ime_nagrada": "Best Fight",
+                        "datum_osvajanja": "2005-06-04"
+                    }],
+                    [{
+                        "ime_nagrada": "Best Kiss",
+                        "datum_osvajanja": "2003-06-04"
+                    }],
+                    [{
+                        "ime_nagrada": "Kids Choice Award for Favorite Movie Actress",
+                        "datum_osvajanja": "2015-06-04"
+                    }]
+                ]
+            },
+            "box_office": {
+                "type": "integer",
+                "title": "The box_office Schema",
+                "examples": [
+                    701100000,
+                    292400000,
+                    192400000,
+                    315000000,
+                    407000000,
+                    709000000,
+                    712000000,
+                    829000000,
+                    698000000,
+                    995000000,
+                    246000000,
+                    180000000,
+                    152000000,
+                    758000000
+                ]
+            },
+            "budzet": {
+                "type": "integer",
+                "title": "The budzet Schema",
+                "examples": [
+                    165000000,
+                    237000000,
+                    125000000,
+                    37000000,
+                    50000000,
+                    127000000,
+                    136000000,
+                    68000000,
+                    20000000,
+                    40000000,
+                    30000000,
+                    300000000,
+                    200000000
+                ]
+            }
+        },
+        "examples": [{
+            "ime_film": "Interstellar",
+            "datum_izdavanja": "2014-09-05",
+            "ocjena": 8.6,
+            "trajanje_min": 196,
+            "zarn": [{
+                "ime_zarn": "drama"
+            },
+            {
+                "ime_zarn": "sci-fi"
+            }],
+            "drzava": [{
+                "ime_drzava": "United Kingdom"
+            },
+            {
+                "ime_drzava": "United States"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "Christopher",
+                "prezime_redatelj": "Nolan"
+            }],
+            "glumci": [{
+                "ime_glumac": "Matthew",
+                "prezime_glumac": "McConaughey"
+            },
+            {
+                "ime_glumac": "Anne",
+                "prezime_glumac": "Hathaway"
+            },
+            {
+                "ime_glumac": "Jessica",
+                "prezime_glumac": "Chastain"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Academy Award for Best Visual Effects",
+                "datum_osvajanja": "2015-02-22"
+            },
+            {
+                "ime_nagrada": "Best Original Score",
+                "datum_osvajanja": "2015-02-08"
+            },
+            {
+                "ime_nagrada": "Best Production Design",
+                "datum_osvajanja": "2015-02-08"
+            }],
+            "box_office": 701100000,
+            "budzet": 165000000
+        },
+        {
+            "ime_film": "Avatar",
+            "datum_izdavanja": "2009-12-10",
+            "ocjena": 7.8,
+            "trajanje_min": 162,
+            "zarn": [{
+                "ime_zarn": "fikcija"
+            },
+            {
+                "ime_zarn": "avanturistièki"
+            }],
+            "drzava": [{
+                "ime_drzava": "United States"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "James",
+                "prezime_redatelj": "Cameron"
+            }],
+            "glumci": [{
+                "ime_glumac": "Sam",
+                "prezime_glumac": "Worthington"
+            },
+            {
+                "ime_glumac": "Zoe",
+                "prezime_glumac": "Saldana"
+            },
+            {
+                "ime_glumac": "Sigourney",
+                "prezime_glumac": "Weaver"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Academy Award for Best Visual Effects",
+                "datum_osvajanja": "2009-02-22"
+            }],
+            "box_office": 292400000,
+            "budzet": 237000000
+        },
+        {
+            "ime_film": "Harry Potter and the Philosophers Stone",
+            "datum_izdavanja": "2001-11-04",
+            "ocjena": 7.6,
+            "trajanje_min": 152,
+            "zarn": [{
+                "ime_zarn": "fikcija"
+            }],
+            "drzava": [{
+                "ime_drzava": "United Kingdom"
+            },
+            {
+                "ime_drzava": "United States"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "Chris",
+                "prezime_redatelj": "Columbus"
+            }],
+            "glumci": [{
+                "ime_glumac": "Daniel",
+                "prezime_glumac": "Radcliffe"
+            },
+            {
+                "ime_glumac": "Rupert",
+                "prezime_glumac": "Grint"
+            },
+            {
+                "ime_glumac": "Emma",
+                "prezime_glumac": "Watson"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Best Family Film",
+                "datum_osvajanja": "2002-01-11"
+            }],
+            "box_office": 192400000,
+            "budzet": 125000000
+        },
+        {
+            "ime_film": "Free guy",
+            "datum_izdavanja": "2021-10-10",
+            "ocjena": 7.1,
+            "trajanje_min": 115,
+            "zarn": [{
+                "ime_zarn": "komedija"
+            },
+            {
+                "ime_zarn": "akcija"
+            }],
+            "drzava": [{
+                "ime_drzava": "United States"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "Shawn",
+                "prezime_redatelj": "Levy"
+            }],
+            "glumci": [{
+                "ime_glumac": "Dwayne",
+                "prezime_glumac": "Johnson"
+            },
+            {
+                "ime_glumac": "Ryan",
+                "prezime_glumac": "Reynolds"
+            },
+            {
+                "ime_glumac": "Jodie",
+                "prezime_glumac": "Comer"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Peoples Choice Awards",
+                "datum_osvajanja": "2021-12-07"
+            }],
+            "box_office": 315000000,
+            "budzet": 125000000
+        },
+        {
+            "ime_film": "Twilight",
+            "datum_izdavanja": "2008-11-17",
+            "ocjena": 5.3,
+            "trajanje_min": 121,
+            "zarn": [{
+                "ime_zarn": "romansa"
+            },
+            {
+                "ime_zarn": "fikcija"
+            }],
+            "drzava": [{
+                "ime_drzava": "United States"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "Catharine",
+                "prezime_redatelj": "Hardwick"
+            }],
+            "glumci": [{
+                "ime_glumac": "Kristen",
+                "prezime_glumac": "Stewart"
+            },
+            {
+                "ime_glumac": "Robert",
+                "prezime_glumac": "Pattinson"
+            },
+            {
+                "ime_glumac": "Taylor",
+                "prezime_glumac": "Lautner"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Best Movie",
+                "datum_osvajanja": "2009-05-31"
+            }],
+            "box_office": 407000000,
+            "budzet": 37000000
+        },
+        {
+            "ime_film": "The Twilight Saga: New Moon",
+            "datum_izdavanja": "2009-11-16",
+            "ocjena": 4.7,
+            "trajanje_min": 130,
+            "zarn": [{
+                "ime_zarn": "romansa"
+            },
+            {
+                "ime_zarn": "fikcija"
+            }],
+            "drzava": [{
+                "ime_drzava": "United States"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "Catharine",
+                "prezime_redatelj": "Hardwick"
+            }],
+            "glumci": [{
+                "ime_glumac": "Kristen",
+                "prezime_glumac": "Stewart"
+            },
+            {
+                "ime_glumac": "Robert",
+                "prezime_glumac": "Pattinson"
+            },
+            {
+                "ime_glumac": "Taylor",
+                "prezime_glumac": "Lautner"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Best Movie",
+                "datum_osvajanja": "2010-03-28"
+            }],
+            "box_office": 709000000,
+            "budzet": 50000000
+        },
+        {
+            "ime_film": "The Twilight Saga: Breaking Dawn – Part 1",
+            "datum_izdavanja": "2011-10-30",
+            "ocjena": 4.9,
+            "trajanje_min": 117,
+            "zarn": [{
+                "ime_zarn": "romansa"
+            },
+            {
+                "ime_zarn": "fikcija"
+            }],
+            "drzava": [{
+                "ime_drzava": "United States"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "Bill",
+                "prezime_redatelj": "Condon"
+            }],
+            "glumci": [{
+                "ime_glumac": "Kristen",
+                "prezime_glumac": "Stewart"
+            },
+            {
+                "ime_glumac": "Robert",
+                "prezime_glumac": "Pattinson"
+            },
+            {
+                "ime_glumac": "Taylor",
+                "prezime_glumac": "Lautner"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Best Kiss",
+                "datum_osvajanja": "2012-05-31"
+            }],
+            "box_office": 712000000,
+            "budzet": 127000000
+        },
+        {
+            "ime_film": "The Twilight Saga: Breaking Dawn – Part 2",
+            "datum_izdavanja": "2012-11-16",
+            "ocjena": 5.5,
+            "trajanje_min": 115,
+            "zarn": [{
+                "ime_zarn": "romansa"
+            },
+            {
+                "ime_zarn": "fikcija"
+            }],
+            "drzava": [{
+                "ime_drzava": "United States"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "Bill",
+                "prezime_redatelj": "Condon"
+            }],
+            "glumci": [{
+                "ime_glumac": "Kristen",
+                "prezime_glumac": "Stewart"
+            },
+            {
+                "ime_glumac": "Robert",
+                "prezime_glumac": "Pattinson"
+            },
+            {
+                "ime_glumac": "Taylor",
+                "prezime_glumac": "Lautner"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Best On-Screen Couple",
+                "datum_osvajanja": "2013-03-18"
+            }],
+            "box_office": 829000000,
+            "budzet": 136000000
+        },
+        {
+            "ime_film": "The Twilight Saga: Eclipse",
+            "datum_izdavanja": "2010-06-30",
+            "ocjena": 5,
+            "trajanje_min": 123,
+            "zarn": [{
+                "ime_zarn": "romansa"
+            },
+            {
+                "ime_zarn": "fikcija"
+            }],
+            "drzava": [{
+                "ime_drzava": "United States"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "David",
+                "prezime_redatelj": "Slade"
+            }],
+            "glumci": [{
+                "ime_glumac": "Kristen",
+                "prezime_glumac": "Stewart"
+            },
+            {
+                "ime_glumac": "Robert",
+                "prezime_glumac": "Pattinson"
+            },
+            {
+                "ime_glumac": "Taylor",
+                "prezime_glumac": "Lautner"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Choice Summer Movie",
+                "datum_osvajanja": "2013-08-08"
+            }],
+            "box_office": 698000000,
+            "budzet": 68000000
+        },
+        {
+            "ime_film": "Titanic",
+            "datum_izdavanja": "1997-11-01",
+            "ocjena": 7.9,
+            "trajanje_min": 195,
+            "zarn": [{
+                "ime_zarn": "romansa"
+            },
+            {
+                "ime_zarn": "povijesni"
+            }],
+            "drzava": [{
+                "ime_drzava": "United States"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "James",
+                "prezime_redatelj": "Cameron"
+            }],
+            "glumci": [{
+                "ime_glumac": "Kate",
+                "prezime_glumac": "Winslet"
+            },
+            {
+                "ime_glumac": "Billy",
+                "prezime_glumac": "Zane"
+            },
+            {
+                "ime_glumac": "Leonardo",
+                "prezime_glumac": "DiCaprio"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Best Original Score",
+                "datum_osvajanja": "1998-02-22"
+            },
+            {
+                "ime_nagrada": "Best Picture",
+                "datum_osvajanja": "1998-02-22"
+            }],
+            "box_office": 995000000,
+            "budzet": 20000000
+        },
+        {
+            "ime_film": "Love Actually",
+            "datum_izdavanja": "2003-11-14",
+            "ocjena": 7.6,
+            "trajanje_min": 136,
+            "zarn": [{
+                "ime_zarn": "drama"
+            },
+            {
+                "ime_zarn": "romansa"
+            }],
+            "drzava": [{
+                "ime_drzava": "United Kingdom"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "Richard",
+                "prezime_redatelj": "Curtis"
+            }],
+            "glumci": [{
+                "ime_glumac": "Hugh",
+                "prezime_glumac": "Grant"
+            },
+            {
+                "ime_glumac": "Liam",
+                "prezime_glumac": "Neeson"
+            },
+            {
+                "ime_glumac": "Emma",
+                "prezime_glumac": "Thompson"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Best Performance by an Actor in a Supporting Role",
+                "datum_osvajanja": "2003-02-08"
+            }],
+            "box_office": 246000000,
+            "budzet": 40000000
+        },
+        {
+            "ime_film": "Kill Bill",
+            "datum_izdavanja": "2004-12-11",
+            "ocjena": 8.2,
+            "trajanje_min": 111,
+            "zarn": [{
+                "ime_zarn": "akcija"
+            },
+            {
+                "ime_zarn": "krimiæ"
+            }],
+            "drzava": [{
+                "ime_drzava": "United States"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "Quentin",
+                "prezime_redatelj": "Tarantino"
+            }],
+            "glumci": [{
+                "ime_glumac": "Uma",
+                "prezime_glumac": "Thurman"
+            },
+            {
+                "ime_glumac": "David",
+                "prezime_glumac": "Carradine"
+            },
+            {
+                "ime_glumac": "Daryl",
+                "prezime_glumac": "Hannah"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Best Actress",
+                "datum_osvajanja": "2004-04-04"
+            }],
+            "box_office": 180000000,
+            "budzet": 30000000
+        },
+        {
+            "ime_film": "Kill Bill 2",
+            "datum_izdavanja": "2004-04-08",
+            "ocjena": 8,
+            "trajanje_min": 137,
+            "zarn": [{
+                "ime_zarn": "akcija"
+            },
+            {
+                "ime_zarn": "krimiæ"
+            }],
+            "drzava": [{
+                "ime_drzava": "United States"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "Quentin",
+                "prezime_redatelj": "Tarantino"
+            }],
+            "glumci": [{
+                "ime_glumac": "Emma",
+                "prezime_glumac": "Thompson"
+            },
+            {
+                "ime_glumac": "David",
+                "prezime_glumac": "Carradine"
+            },
+            {
+                "ime_glumac": "Lucy",
+                "prezime_glumac": "Liu"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Best Fight",
+                "datum_osvajanja": "2005-06-04"
+            }],
+            "box_office": 152000000,
+            "budzet": 30000000
+        },
+        {
+            "ime_film": "The Amazing Spiderman",
+            "datum_izdavanja": "2012-07-03",
+            "ocjena": 6.9,
+            "trajanje_min": 136,
+            "zarn": [{
+                "ime_zarn": "sci-fi"
+            },
+            {
+                "ime_zarn": "akcija"
+            }],
+            "drzava": [{
+                "ime_drzava": "United States"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "Marc",
+                "prezime_redatelj": "Webb"
+            }],
+            "glumci": [{
+                "ime_glumac": "Andrew",
+                "prezime_glumac": "Garfield"
+            },
+            {
+                "ime_glumac": "Emma",
+                "prezime_glumac": "Stone"
+            },
+            {
+                "ime_glumac": "Stan",
+                "prezime_glumac": "Lee"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Best Kiss",
+                "datum_osvajanja": "2003-06-04"
+            }],
+            "box_office": 758000000,
+            "budzet": 300000000
+        },
+        {
+            "ime_film": "The Amazing Spiderman 2",
+            "datum_izdavanja": "2012-07-03",
+            "ocjena": 6.6,
+            "trajanje_min": 142,
+            "zarn": [{
+                "ime_zarn": "sci-fi"
+            },
+            {
+                "ime_zarn": "akcija"
+            }],
+            "drzava": [{
+                "ime_drzava": "United States"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "Marc",
+                "prezime_redatelj": "Webb"
+            }],
+            "glumci": [{
+                "ime_glumac": "Andrew",
+                "prezime_glumac": "Garfield"
+            },
+            {
+                "ime_glumac": "Emma",
+                "prezime_glumac": "Stone"
+            },
+            {
+                "ime_glumac": "Stan",
+                "prezime_glumac": "Lee"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Kids Choice Award for Favorite Movie Actress",
+                "datum_osvajanja": "2015-06-04"
+            }],
+            "box_office": 709000000,
+            "budzet": 200000000
+        }]
+    },
+    "examples": [
+        [{
+            "ime_film": "Interstellar",
+            "datum_izdavanja": "2014-09-05",
+            "ocjena": 8.6,
+            "trajanje_min": 196,
+            "zarn": [{
+                "ime_zarn": "drama"
+            },
+            {
+                "ime_zarn": "sci-fi"
+            }],
+            "drzava": [{
+                "ime_drzava": "United Kingdom"
+            },
+            {
+                "ime_drzava": "United States"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "Christopher",
+                "prezime_redatelj": "Nolan"
+            }],
+            "glumci": [{
+                "ime_glumac": "Matthew",
+                "prezime_glumac": "McConaughey"
+            },
+            {
+                "ime_glumac": "Anne",
+                "prezime_glumac": "Hathaway"
+            },
+            {
+                "ime_glumac": "Jessica",
+                "prezime_glumac": "Chastain"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Academy Award for Best Visual Effects",
+                "datum_osvajanja": "2015-02-22"
+            },
+            {
+                "ime_nagrada": "Best Original Score",
+                "datum_osvajanja": "2015-02-08"
+            },
+            {
+                "ime_nagrada": "Best Production Design",
+                "datum_osvajanja": "2015-02-08"
+            }],
+            "box_office": 701100000,
+            "budzet": 165000000
+        },
+        {
+            "ime_film": "Avatar",
+            "datum_izdavanja": "2009-12-10",
+            "ocjena": 7.8,
+            "trajanje_min": 162,
+            "zarn": [{
+                "ime_zarn": "fikcija"
+            },
+            {
+                "ime_zarn": "avanturistièki"
+            }],
+            "drzava": [{
+                "ime_drzava": "United States"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "James",
+                "prezime_redatelj": "Cameron"
+            }],
+            "glumci": [{
+                "ime_glumac": "Sam",
+                "prezime_glumac": "Worthington"
+            },
+            {
+                "ime_glumac": "Zoe",
+                "prezime_glumac": "Saldana"
+            },
+            {
+                "ime_glumac": "Sigourney",
+                "prezime_glumac": "Weaver"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Academy Award for Best Visual Effects",
+                "datum_osvajanja": "2009-02-22"
+            }],
+            "box_office": 292400000,
+            "budzet": 237000000
+        },
+        {
+            "ime_film": "Harry Potter and the Philosophers Stone",
+            "datum_izdavanja": "2001-11-04",
+            "ocjena": 7.6,
+            "trajanje_min": 152,
+            "zarn": [{
+                "ime_zarn": "fikcija"
+            }],
+            "drzava": [{
+                "ime_drzava": "United Kingdom"
+            },
+            {
+                "ime_drzava": "United States"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "Chris",
+                "prezime_redatelj": "Columbus"
+            }],
+            "glumci": [{
+                "ime_glumac": "Daniel",
+                "prezime_glumac": "Radcliffe"
+            },
+            {
+                "ime_glumac": "Rupert",
+                "prezime_glumac": "Grint"
+            },
+            {
+                "ime_glumac": "Emma",
+                "prezime_glumac": "Watson"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Best Family Film",
+                "datum_osvajanja": "2002-01-11"
+            }],
+            "box_office": 192400000,
+            "budzet": 125000000
+        },
+        {
+            "ime_film": "Free guy",
+            "datum_izdavanja": "2021-10-10",
+            "ocjena": 7.1,
+            "trajanje_min": 115,
+            "zarn": [{
+                "ime_zarn": "komedija"
+            },
+            {
+                "ime_zarn": "akcija"
+            }],
+            "drzava": [{
+                "ime_drzava": "United States"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "Shawn",
+                "prezime_redatelj": "Levy"
+            }],
+            "glumci": [{
+                "ime_glumac": "Dwayne",
+                "prezime_glumac": "Johnson"
+            },
+            {
+                "ime_glumac": "Ryan",
+                "prezime_glumac": "Reynolds"
+            },
+            {
+                "ime_glumac": "Jodie",
+                "prezime_glumac": "Comer"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Peoples Choice Awards",
+                "datum_osvajanja": "2021-12-07"
+            }],
+            "box_office": 315000000,
+            "budzet": 125000000
+        },
+        {
+            "ime_film": "Twilight",
+            "datum_izdavanja": "2008-11-17",
+            "ocjena": 5.3,
+            "trajanje_min": 121,
+            "zarn": [{
+                "ime_zarn": "romansa"
+            },
+            {
+                "ime_zarn": "fikcija"
+            }],
+            "drzava": [{
+                "ime_drzava": "United States"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "Catharine",
+                "prezime_redatelj": "Hardwick"
+            }],
+            "glumci": [{
+                "ime_glumac": "Kristen",
+                "prezime_glumac": "Stewart"
+            },
+            {
+                "ime_glumac": "Robert",
+                "prezime_glumac": "Pattinson"
+            },
+            {
+                "ime_glumac": "Taylor",
+                "prezime_glumac": "Lautner"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Best Movie",
+                "datum_osvajanja": "2009-05-31"
+            }],
+            "box_office": 407000000,
+            "budzet": 37000000
+        },
+        {
+            "ime_film": "The Twilight Saga: New Moon",
+            "datum_izdavanja": "2009-11-16",
+            "ocjena": 4.7,
+            "trajanje_min": 130,
+            "zarn": [{
+                "ime_zarn": "romansa"
+            },
+            {
+                "ime_zarn": "fikcija"
+            }],
+            "drzava": [{
+                "ime_drzava": "United States"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "Catharine",
+                "prezime_redatelj": "Hardwick"
+            }],
+            "glumci": [{
+                "ime_glumac": "Kristen",
+                "prezime_glumac": "Stewart"
+            },
+            {
+                "ime_glumac": "Robert",
+                "prezime_glumac": "Pattinson"
+            },
+            {
+                "ime_glumac": "Taylor",
+                "prezime_glumac": "Lautner"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Best Movie",
+                "datum_osvajanja": "2010-03-28"
+            }],
+            "box_office": 709000000,
+            "budzet": 50000000
+        },
+        {
+            "ime_film": "The Twilight Saga: Breaking Dawn – Part 1",
+            "datum_izdavanja": "2011-10-30",
+            "ocjena": 4.9,
+            "trajanje_min": 117,
+            "zarn": [{
+                "ime_zarn": "romansa"
+            },
+            {
+                "ime_zarn": "fikcija"
+            }],
+            "drzava": [{
+                "ime_drzava": "United States"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "Bill",
+                "prezime_redatelj": "Condon"
+            }],
+            "glumci": [{
+                "ime_glumac": "Kristen",
+                "prezime_glumac": "Stewart"
+            },
+            {
+                "ime_glumac": "Robert",
+                "prezime_glumac": "Pattinson"
+            },
+            {
+                "ime_glumac": "Taylor",
+                "prezime_glumac": "Lautner"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Best Kiss",
+                "datum_osvajanja": "2012-05-31"
+            }],
+            "box_office": 712000000,
+            "budzet": 127000000
+        },
+        {
+            "ime_film": "The Twilight Saga: Breaking Dawn – Part 2",
+            "datum_izdavanja": "2012-11-16",
+            "ocjena": 5.5,
+            "trajanje_min": 115,
+            "zarn": [{
+                "ime_zarn": "romansa"
+            },
+            {
+                "ime_zarn": "fikcija"
+            }],
+            "drzava": [{
+                "ime_drzava": "United States"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "Bill",
+                "prezime_redatelj": "Condon"
+            }],
+            "glumci": [{
+                "ime_glumac": "Kristen",
+                "prezime_glumac": "Stewart"
+            },
+            {
+                "ime_glumac": "Robert",
+                "prezime_glumac": "Pattinson"
+            },
+            {
+                "ime_glumac": "Taylor",
+                "prezime_glumac": "Lautner"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Best On-Screen Couple",
+                "datum_osvajanja": "2013-03-18"
+            }],
+            "box_office": 829000000,
+            "budzet": 136000000
+        },
+        {
+            "ime_film": "The Twilight Saga: Eclipse",
+            "datum_izdavanja": "2010-06-30",
+            "ocjena": 5,
+            "trajanje_min": 123,
+            "zarn": [{
+                "ime_zarn": "romansa"
+            },
+            {
+                "ime_zarn": "fikcija"
+            }],
+            "drzava": [{
+                "ime_drzava": "United States"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "David",
+                "prezime_redatelj": "Slade"
+            }],
+            "glumci": [{
+                "ime_glumac": "Kristen",
+                "prezime_glumac": "Stewart"
+            },
+            {
+                "ime_glumac": "Robert",
+                "prezime_glumac": "Pattinson"
+            },
+            {
+                "ime_glumac": "Taylor",
+                "prezime_glumac": "Lautner"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Choice Summer Movie",
+                "datum_osvajanja": "2013-08-08"
+            }],
+            "box_office": 698000000,
+            "budzet": 68000000
+        },
+        {
+            "ime_film": "Titanic",
+            "datum_izdavanja": "1997-11-01",
+            "ocjena": 7.9,
+            "trajanje_min": 195,
+            "zarn": [{
+                "ime_zarn": "romansa"
+            },
+            {
+                "ime_zarn": "povijesni"
+            }],
+            "drzava": [{
+                "ime_drzava": "United States"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "James",
+                "prezime_redatelj": "Cameron"
+            }],
+            "glumci": [{
+                "ime_glumac": "Kate",
+                "prezime_glumac": "Winslet"
+            },
+            {
+                "ime_glumac": "Billy",
+                "prezime_glumac": "Zane"
+            },
+            {
+                "ime_glumac": "Leonardo",
+                "prezime_glumac": "DiCaprio"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Best Original Score",
+                "datum_osvajanja": "1998-02-22"
+            },
+            {
+                "ime_nagrada": "Best Picture",
+                "datum_osvajanja": "1998-02-22"
+            }],
+            "box_office": 995000000,
+            "budzet": 20000000
+        },
+        {
+            "ime_film": "Love Actually",
+            "datum_izdavanja": "2003-11-14",
+            "ocjena": 7.6,
+            "trajanje_min": 136,
+            "zarn": [{
+                "ime_zarn": "drama"
+            },
+            {
+                "ime_zarn": "romansa"
+            }],
+            "drzava": [{
+                "ime_drzava": "United Kingdom"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "Richard",
+                "prezime_redatelj": "Curtis"
+            }],
+            "glumci": [{
+                "ime_glumac": "Hugh",
+                "prezime_glumac": "Grant"
+            },
+            {
+                "ime_glumac": "Liam",
+                "prezime_glumac": "Neeson"
+            },
+            {
+                "ime_glumac": "Emma",
+                "prezime_glumac": "Thompson"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Best Performance by an Actor in a Supporting Role",
+                "datum_osvajanja": "2003-02-08"
+            }],
+            "box_office": 246000000,
+            "budzet": 40000000
+        },
+        {
+            "ime_film": "Kill Bill",
+            "datum_izdavanja": "2004-12-11",
+            "ocjena": 8.2,
+            "trajanje_min": 111,
+            "zarn": [{
+                "ime_zarn": "akcija"
+            },
+            {
+                "ime_zarn": "krimiæ"
+            }],
+            "drzava": [{
+                "ime_drzava": "United States"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "Quentin",
+                "prezime_redatelj": "Tarantino"
+            }],
+            "glumci": [{
+                "ime_glumac": "Uma",
+                "prezime_glumac": "Thurman"
+            },
+            {
+                "ime_glumac": "David",
+                "prezime_glumac": "Carradine"
+            },
+            {
+                "ime_glumac": "Daryl",
+                "prezime_glumac": "Hannah"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Best Actress",
+                "datum_osvajanja": "2004-04-04"
+            }],
+            "box_office": 180000000,
+            "budzet": 30000000
+        },
+        {
+            "ime_film": "Kill Bill 2",
+            "datum_izdavanja": "2004-04-08",
+            "ocjena": 8,
+            "trajanje_min": 137,
+            "zarn": [{
+                "ime_zarn": "akcija"
+            },
+            {
+                "ime_zarn": "krimiæ"
+            }],
+            "drzava": [{
+                "ime_drzava": "United States"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "Quentin",
+                "prezime_redatelj": "Tarantino"
+            }],
+            "glumci": [{
+                "ime_glumac": "Emma",
+                "prezime_glumac": "Thompson"
+            },
+            {
+                "ime_glumac": "David",
+                "prezime_glumac": "Carradine"
+            },
+            {
+                "ime_glumac": "Lucy",
+                "prezime_glumac": "Liu"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Best Fight",
+                "datum_osvajanja": "2005-06-04"
+            }],
+            "box_office": 152000000,
+            "budzet": 30000000
+        },
+        {
+            "ime_film": "The Amazing Spiderman",
+            "datum_izdavanja": "2012-07-03",
+            "ocjena": 6.9,
+            "trajanje_min": 136,
+            "zarn": [{
+                "ime_zarn": "sci-fi"
+            },
+            {
+                "ime_zarn": "akcija"
+            }],
+            "drzava": [{
+                "ime_drzava": "United States"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "Marc",
+                "prezime_redatelj": "Webb"
+            }],
+            "glumci": [{
+                "ime_glumac": "Andrew",
+                "prezime_glumac": "Garfield"
+            },
+            {
+                "ime_glumac": "Emma",
+                "prezime_glumac": "Stone"
+            },
+            {
+                "ime_glumac": "Stan",
+                "prezime_glumac": "Lee"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Best Kiss",
+                "datum_osvajanja": "2003-06-04"
+            }],
+            "box_office": 758000000,
+            "budzet": 300000000
+        },
+        {
+            "ime_film": "The Amazing Spiderman 2",
+            "datum_izdavanja": "2012-07-03",
+            "ocjena": 6.6,
+            "trajanje_min": 142,
+            "zarn": [{
+                "ime_zarn": "sci-fi"
+            },
+            {
+                "ime_zarn": "akcija"
+            }],
+            "drzava": [{
+                "ime_drzava": "United States"
+            }],
+            "redatelj": [{
+                "ime_redatelj": "Marc",
+                "prezime_redatelj": "Webb"
+            }],
+            "glumci": [{
+                "ime_glumac": "Andrew",
+                "prezime_glumac": "Garfield"
+            },
+            {
+                "ime_glumac": "Emma",
+                "prezime_glumac": "Stone"
+            },
+            {
+                "ime_glumac": "Stan",
+                "prezime_glumac": "Lee"
+            }],
+            "nagrade": [{
+                "ime_nagrada": "Kids Choice Award for Favorite Movie Actress",
+                "datum_osvajanja": "2015-06-04"
+            }],
+            "box_office": 709000000,
+            "budzet": 200000000
+        }]
+    ]
+}
