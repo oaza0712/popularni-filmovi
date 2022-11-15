@@ -1,0 +1,12 @@
+.header
+{
+ background-color: #ed9511c2;
+ display: flex;
+ color: white;
+ font-size: 35px;
+ justify-content: space-between;
+}
+.text{
+    display: inline;
+    
+}

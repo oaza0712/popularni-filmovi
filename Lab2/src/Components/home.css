@@ -1,0 +1,23 @@
+.main{
+
+    
+}
+.meta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    color: rgb(0, 0, 0);
+}
+ul{
+    display: table;
+    list-style-type: none;
+    margin: auto;
+}
+ol{
+     
+    display: table;
+    list-style-type: none;
+    margin: auto;
+}
