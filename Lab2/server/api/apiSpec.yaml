@@ -1,0 +1,309 @@
+openapi: 3.0.0
+servers:
+  # Added by API Auto Mocking Plugin
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/oaza0712/Popularni_filmovi/1.0.0
+info:
+  description: This is a simple API
+  version: "1.0.0"
+  title: Popular movies API
+  contact:
+    email: leona.varazdin@gmail.com
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+tags:
+  - name: admins
+    description: Secured Admin-only calls
+  - name: developers
+    description: Operations available to regular developers
+paths:
+  /movies/all_movies:
+    get:
+      tags:
+        - developers
+      summary: returns all movies from database
+      operationId: searchInventory
+      description: |
+        By sending this request you can get all the movies in JSON format from Popularni_filmovi database
+      responses:
+        '200':
+          description: search results
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: '#/components/schemas/Response'
+    /actors:
+       get:
+      tags:
+        - developers
+      summary: returns all actors from database
+      operationId: searchInventory
+      description: |
+        By sending this request you can get all the movies in JSON format from Popularni_filmovi database
+      responses:
+        '200':
+          description: search results
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: '#/components/schemas/Actors'
+     /directors:
+       get:
+      tags:
+        - developers
+      summary: returns all directors from database
+      operationId: searchInventory
+      description: |
+        By sending this request you can get all the movies in JSON format from Popularni_filmovi database
+      responses:
+        '200':
+          description: search results
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: '#/components/schemas/Directors'
+      /awards:
+        get:
+      tags:
+        - developers
+      summary: returns all awards from database
+      operationId: searchInventory
+      description: |
+        By sending this request you can get all the movies in JSON format from Popularni_filmovi database
+      responses:
+        '200':
+          description: search results
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: '#/components/schemas/Awards'
+
+    /movies/:{id}:
+    get:
+      tags:
+        - developers
+      summary: returns movie by id from database
+      operationId: searchInventory
+      description: |
+        By sending this request you can get the movies in JSON format from Popularni_filmovi database
+      responses:
+        '200':
+          description: search results
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: '#/components/schemas/Response'
+        '404':
+          description: no search results
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: '#/components/schemas/Response'
+    put:
+      tags:
+        - developers
+      summary: returns movie by id from database
+      operationId: searchInventory
+      description: |
+        By sending this request you can gupdatet the state in JSON format from Popularni_filmovi database
+      responses:
+        '200':
+          description: search results
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: '#/components/schemas/Response'
+        '404':
+          description: no search results
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: '#/components/schemas/Response'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Country'
+        description: State item to add
+    delte:
+      tags:
+        - developers
+      summary: delets movie by id from database
+      operationId: searchInventory
+      description: |
+        By sending this request you can delete the state in JSON format from Popularni_filmovi database
+      responses:
+        '200':
+          description: search results
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: '#/components/schemas/Response'
+        '404':
+          description: no search results
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: '#/components/schemas/Response'
+
+    /movies
+    post:
+      tags:
+        - admins
+      summary: adds an state item
+      operationId: addInventory
+      description: Adds an item to the system
+      responses:
+        '200':
+        description: search results
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: '#/components/schemas/Response'
+          description: item created
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Country'
+        description: State item to add
+components:
+  schemas:
+    Response:
+      type: object
+      required:
+        - status
+        - message
+        - response
+      properties:
+        status:
+          type: string
+          example: 'OK'
+        message:
+          type: string
+          example:'Fetched all movies'
+        response:
+          $ref: '#/components/schemas/Movie'
+    
+    Movie:
+      type: object
+      required:
+         - ime_film
+         - datum_izdavanja
+         - ocjena
+         - trajanje_min
+         - zarn
+         - drzava
+         - redatelj
+         - glumci
+         - nagrade
+         - box_office
+         - budzet
+      properties:
+        ime_film:
+          type: string
+          example:'Interstellar'
+        datum_izdavanja:
+          type: string
+          example:'2022-09-09'
+        ocjena:
+          type: string
+          example:'5'
+        trajanje_min:
+          type: string
+          example:'158'
+        zarn:
+           $ref: '#/components/schemas/Genre'
+        drzava:
+           $ref: '#/components/schemas/Country'
+        redatelj:
+           $ref: '#/components/schemas/Director'
+        glumci:
+           $ref: '#/components/schemas/Actors'
+        nagrade:
+           $ref: '#/components/schemas/Awards'
+        box_office:
+          type: string
+          example:'500000'
+        budzet:
+          type: string
+          example:'500000000'
+      Genre:
+        type: object
+        required:
+         - ime_zanr
+        properties:
+          ime_zanr: 
+            type: string
+            example: 'horor'
+      Country:
+        type: object
+        required:
+         - ime_drzava
+        properties:
+          ime_zanr: 
+            type: string
+            example: 'United Kingdom'
+      Directors:
+          type: object
+          required:
+            - ime_redatelj
+            -prezime_redatelj
+          properties:
+            ime_redatelj: 
+              type: string
+              example: 'Stanly'
+            prezime_redatelj: 
+              type: string
+              example: 'Cubrick'
+        Actors:
+          type: object
+          required:
+            - ime_glumac
+            -prezime_glumac
+          properties:
+            ime_glumac: 
+              type: string
+              example: 'Stanly'
+            prezime_glumac: 
+              type: string
+              example: 'Cubrick'
+        Awardss:
+          type: object
+          required:
+            - ime_nagrada
+            -datum_osvajanja
+          properties:
+            ime_nagrada: 
+              type: string
+              example: 'Oscar'
+            datum_osvajanja: 
+              type: string
+              example: '2009-02-02'
+      
+        
+        
+        
+        

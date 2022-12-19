@@ -25,7 +25,7 @@ SET default_table_access_method = heap;
 --
 
 CREATE TABLE public.drzava (
-    id_drzava integer NOT NULL,
+    --id_drzava integer NOT NULL,
     ime_drzava character varying(60) NOT NULL
 );
 
@@ -38,7 +38,7 @@ ALTER TABLE public.drzava OWNER TO postgres;
 
 CREATE TABLE public.film (
     ime_film character varying(50) NOT NULL,
-    id_film integer NOT NULL,
+    --id_film integer NOT NULL,
     datum_izdavanja date NOT NULL,
     ocjena double precision NOT NULL,
     trajanje_min integer NOT NULL,
@@ -55,8 +55,8 @@ ALTER TABLE public.film OWNER TO postgres;
 
 CREATE TABLE public.glumci (
     ime_glumac character varying(40) NOT NULL,
-    prezime_glumac character varying(40) NOT NULL,
-    id_glumac integer NOT NULL
+    prezime_glumac character varying(40) NOT NULL
+    --id_glumac integer NOT NULL
 );
 
 
@@ -116,7 +116,7 @@ ALTER TABLE public.je_zarn OWNER TO postgres;
 --
 
 CREATE TABLE public.nagrada (
-    id_nagrada integer NOT NULL,
+    --id_nagrada integer NOT NULL,
     ime_nagrada character varying(60) NOT NULL
 );
 
@@ -129,8 +129,8 @@ ALTER TABLE public.nagrada OWNER TO postgres;
 
 CREATE TABLE public.redatelji (
     ime_redatelj character varying(40) NOT NULL,
-    prezime_redatelj character varying(40) NOT NULL,
-    id_redatelj integer NOT NULL
+    prezime_redatelj character varying(40) NOT NULL
+    --id_redatelj integer NOT NULL
 );
 
 
@@ -153,8 +153,8 @@ ALTER TABLE public.sniman_u OWNER TO postgres;
 --
 
 CREATE TABLE public.zarn (
-    ime_zarn character varying(50) NOT NULL,
-    id_zarn integer NOT NULL
+    ime_zarn character varying(50) NOT NULL
+    --id_zarn integer NOT NULL
 );
 
 
@@ -164,63 +164,63 @@ ALTER TABLE public.zarn OWNER TO postgres;
 -- Data for Name: drzava; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public.drzava (id_drzava, ime_drzava) VALUES (1, 'United Kingdom');
-INSERT INTO public.drzava (id_drzava, ime_drzava) VALUES (2, 'United States');
+INSERT INTO public.drzava ( ime_drzava) VALUES ( 'United Kingdom');
+INSERT INTO public.drzava ( ime_drzava) VALUES ( 'United States');
 
 
 --
 -- Data for Name: film; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public.film (ime_film, id_film, datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('Interstellar', 1, '2014-09-05', 8.6, 196, 165000000, 701100000);
-INSERT INTO public.film (ime_film, id_film, datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('Avatar', 2, '2009-12-10', 7.8, 162, 237000000, 292400000);
-INSERT INTO public.film (ime_film, id_film, datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('Harry Potter and the Philosophers Stone', 3, '2001-11-04', 7.6, 152, 125000000, 192400000);
-INSERT INTO public.film (ime_film, id_film, datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('Free guy', 4, '2021-10-10', 7.1, 115, 125000000, 315000000);
-INSERT INTO public.film (ime_film, id_film, datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('Twilight', 5, '2008-11-17', 5.3, 121, 37000000, 407000000);
-INSERT INTO public.film (ime_film, id_film, datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('The Twilight Saga: New Moon', 6, '2009-11-16', 4.7, 130, 50000000, 709000000);
-INSERT INTO public.film (ime_film, id_film, datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('The Twilight Saga: Breaking Dawn – Part 1', 7, '2011-10-30', 4.9, 117, 127000000, 712000000);
-INSERT INTO public.film (ime_film, id_film, datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('The Twilight Saga: Breaking Dawn – Part 2', 8, '2012-11-16', 5.5, 115, 136000000, 829000000);
-INSERT INTO public.film (ime_film, id_film, datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('The Twilight Saga: Eclipse', 9, '2010-06-30', 5, 123, 68000000, 698000000);
-INSERT INTO public.film (ime_film, id_film, datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('Titanic', 10, '1997-11-01', 7.9, 195, 20000000, 995000000);
-INSERT INTO public.film (ime_film, id_film, datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('Love Actually', 11, '2003-11-14', 7.6, 136, 40000000, 246000000);
-INSERT INTO public.film (ime_film, id_film, datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('Kill Bill', 12, '2004-12-11', 8.2, 111, 30000000, 180000000);
-INSERT INTO public.film (ime_film, id_film, datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('Kill Bill 2', 13, '2004-04-08', 8, 137, 30000000, 152000000);
-INSERT INTO public.film (ime_film, id_film, datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('The Amazing Spiderman', 14, '2012-07-03', 6.9, 136, 300000000, 758000000);
-INSERT INTO public.film (ime_film, id_film, datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('The Amazing Spiderman 2', 15, '2012-07-03', 6.6, 142, 200000000, 709000000);
+INSERT INTO public.film (ime_film,  datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('Interstellar',  '2014-09-05', 8.6, 196, 165000000, 701100000);
+INSERT INTO public.film (ime_film,  datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('Avatar', '2009-12-10', 7.8, 162, 237000000, 292400000);
+INSERT INTO public.film (ime_film,  datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('Harry Potter and the Philosophers Stone', '2001-11-04', 7.6, 152, 125000000, 192400000);
+INSERT INTO public.film (ime_film,  datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('Free guy','2021-10-10', 7.1, 115, 125000000, 315000000);
+INSERT INTO public.film (ime_film,  datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('Twilight', '2008-11-17', 5.3, 121, 37000000, 407000000);
+INSERT INTO public.film (ime_film,  datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('The Twilight Saga: New Moon',  '2009-11-16', 4.7, 130, 50000000, 709000000);
+INSERT INTO public.film (ime_film,  datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('The Twilight Saga: Breaking Dawn – Part 1',  '2011-10-30', 4.9, 117, 127000000, 712000000);
+INSERT INTO public.film (ime_film,  datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('The Twilight Saga: Breaking Dawn – Part 2',  '2012-11-16', 5.5, 115, 136000000, 829000000);
+INSERT INTO public.film (ime_film,  datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('The Twilight Saga: Eclipse',  '2010-06-30', 5, 123, 68000000, 698000000);
+INSERT INTO public.film (ime_film,  datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('Titanic', '1997-11-01', 7.9, 195, 20000000, 995000000);
+INSERT INTO public.film (ime_film,  datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('Love Actually',  '2003-11-14', 7.6, 136, 40000000, 246000000);
+INSERT INTO public.film (ime_film,  datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('Kill Bill', '2004-12-11', 8.2, 111, 30000000, 180000000);
+INSERT INTO public.film (ime_film,  datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('Kill Bill 2',  '2004-04-08', 8, 137, 30000000, 152000000);
+INSERT INTO public.film (ime_film,  datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('The Amazing Spiderman',  '2012-07-03', 6.9, 136, 300000000, 758000000);
+INSERT INTO public.film (ime_film,  datum_izdavanja, ocjena, trajanje_min, budzet, box_office) VALUES ('The Amazing Spiderman 2',  '2012-07-03', 6.6, 142, 200000000, 709000000);
 
 
 --
 -- Data for Name: glumci; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public.glumci (ime_glumac, prezime_glumac, id_glumac) VALUES ('Sam', 'Worthington', 4);
-INSERT INTO public.glumci (ime_glumac, prezime_glumac, id_glumac) VALUES ('Zoe', 'Saldana', 5);
-INSERT INTO public.glumci (ime_glumac, prezime_glumac, id_glumac) VALUES ('Sigourney', 'Weaver', 6);
-INSERT INTO public.glumci (ime_glumac, prezime_glumac, id_glumac) VALUES ('Daniel', 'Radcliffe', 7);
-INSERT INTO public.glumci (ime_glumac, prezime_glumac, id_glumac) VALUES ('Rupert', 'Grint', 8);
-INSERT INTO public.glumci (ime_glumac, prezime_glumac, id_glumac) VALUES ('Emma', 'Watson', 9);
-INSERT INTO public.glumci (ime_glumac, prezime_glumac, id_glumac) VALUES ('Dwayne', 'Johnson', 10);
-INSERT INTO public.glumci (ime_glumac, prezime_glumac, id_glumac) VALUES ('Ryan', 'Reynolds', 11);
-INSERT INTO public.glumci (ime_glumac, prezime_glumac, id_glumac) VALUES ('Jodie', 'Comer', 12);
-INSERT INTO public.glumci (ime_glumac, prezime_glumac, id_glumac) VALUES ('Kristen', 'Stewart', 13);
-INSERT INTO public.glumci (ime_glumac, prezime_glumac, id_glumac) VALUES ('Robert', 'Pattinson', 14);
-INSERT INTO public.glumci (ime_glumac, prezime_glumac, id_glumac) VALUES ('Taylor', 'Lautner', 15);
-INSERT INTO public.glumci (ime_glumac, prezime_glumac, id_glumac) VALUES ('Kate', 'Winslet', 17);
-INSERT INTO public.glumci (ime_glumac, prezime_glumac, id_glumac) VALUES ('Billy', 'Zane', 18);
-INSERT INTO public.glumci (ime_glumac, prezime_glumac, id_glumac) VALUES ('Hugh', 'Grant', 19);
-INSERT INTO public.glumci (ime_glumac, prezime_glumac, id_glumac) VALUES ('Liam', 'Neeson', 20);
-INSERT INTO public.glumci (ime_glumac, prezime_glumac, id_glumac) VALUES ('Emma', 'Thompson', 21);
-INSERT INTO public.glumci (ime_glumac, prezime_glumac, id_glumac) VALUES ('Uma', 'Thurman', 22);
-INSERT INTO public.glumci (ime_glumac, prezime_glumac, id_glumac) VALUES ('David', 'Carradine', 23);
-INSERT INTO public.glumci (ime_glumac, prezime_glumac, id_glumac) VALUES ('Daryl', 'Hannah', 24);
-INSERT INTO public.glumci (ime_glumac, prezime_glumac, id_glumac) VALUES ('Lucy', 'Liu', 25);
-INSERT INTO public.glumci (ime_glumac, prezime_glumac, id_glumac) VALUES ('Andrew', 'Garfield', 26);
-INSERT INTO public.glumci (ime_glumac, prezime_glumac, id_glumac) VALUES ('Emma', 'Stone', 27);
-INSERT INTO public.glumci (ime_glumac, prezime_glumac, id_glumac) VALUES ('Stan', 'Lee', 28);
-INSERT INTO public.glumci (ime_glumac, prezime_glumac, id_glumac) VALUES ('Matthew', 'McConaughey', 1);
-INSERT INTO public.glumci (ime_glumac, prezime_glumac, id_glumac) VALUES ('Anne', 'Hathaway', 2);
-INSERT INTO public.glumci (ime_glumac, prezime_glumac, id_glumac) VALUES ('Jessica', 'Chastain', 3);
-INSERT INTO public.glumci (ime_glumac, prezime_glumac, id_glumac) VALUES ('Leonardo', 'DiCaprio', 16);
+INSERT INTO public.glumci (ime_glumac, prezime_glumac) VALUES ('Sam', 'Worthington');
+INSERT INTO public.glumci (ime_glumac, prezime_glumac) VALUES ('Zoe', 'Saldana');
+INSERT INTO public.glumci (ime_glumac, prezime_glumac) VALUES ('Sigourney', 'Weaver');
+INSERT INTO public.glumci (ime_glumac, prezime_glumac) VALUES ('Daniel', 'Radcliffe');
+INSERT INTO public.glumci (ime_glumac, prezime_glumac) VALUES ('Rupert', 'Grint');
+INSERT INTO public.glumci (ime_glumac, prezime_glumac) VALUES ('Emma', 'Watson');
+INSERT INTO public.glumci (ime_glumac, prezime_glumac) VALUES ('Dwayne', 'Johnson');
+INSERT INTO public.glumci (ime_glumac, prezime_glumac) VALUES ('Ryan', 'Reynolds');
+INSERT INTO public.glumci (ime_glumac, prezime_glumac) VALUES ('Jodie', 'Comer');
+INSERT INTO public.glumci (ime_glumac, prezime_glumac) VALUES ('Kristen', 'Stewart');
+INSERT INTO public.glumci (ime_glumac, prezime_glumac) VALUES ('Robert', 'Pattinson');
+INSERT INTO public.glumci (ime_glumac, prezime_glumac) VALUES ('Taylor', 'Lautner');
+INSERT INTO public.glumci (ime_glumac, prezime_glumac) VALUES ('Kate', 'Winslet');
+INSERT INTO public.glumci (ime_glumac, prezime_glumac) VALUES ('Billy', 'Zane');
+INSERT INTO public.glumci (ime_glumac, prezime_glumac) VALUES ('Hugh', 'Grant');
+INSERT INTO public.glumci (ime_glumac, prezime_glumac) VALUES ('Liam', 'Neeson');
+INSERT INTO public.glumci (ime_glumac, prezime_glumac) VALUES ('Emma', 'Thompson');
+INSERT INTO public.glumci (ime_glumac, prezime_glumac) VALUES ('Uma', 'Thurman');
+INSERT INTO public.glumci (ime_glumac, prezime_glumac) VALUES ('David', 'Carradine');
+INSERT INTO public.glumci (ime_glumac, prezime_glumac) VALUES ('Daryl', 'Hannah');
+INSERT INTO public.glumci (ime_glumac, prezime_glumac ) VALUES ('Lucy', 'Liu');
+INSERT INTO public.glumci (ime_glumac, prezime_glumac ) VALUES ('Andrew', 'Garfield');
+INSERT INTO public.glumci (ime_glumac, prezime_glumac ) VALUES ('Emma', 'Stone');
+INSERT INTO public.glumci (ime_glumac, prezime_glumac ) VALUES ('Stan', 'Lee');
+INSERT INTO public.glumci (ime_glumac, prezime_glumac) VALUES ('Matthew', 'McConaughey');
+INSERT INTO public.glumci (ime_glumac, prezime_glumac ) VALUES ('Anne', 'Hathaway');
+INSERT INTO public.glumci (ime_glumac, prezime_glumac ) VALUES ('Jessica', 'Chastain');
+INSERT INTO public.glumci (ime_glumac, prezime_glumac ) VALUES ('Leonardo', 'DiCaprio');
 
 
 --
@@ -358,36 +358,36 @@ INSERT INTO public.je_zarn (id_film, id_zarn) VALUES (15, 5);
 -- Data for Name: nagrada; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public.nagrada (id_nagrada, ime_nagrada) VALUES (1, 'Academy Award for Best Visual Effects');
-INSERT INTO public.nagrada (id_nagrada, ime_nagrada) VALUES (2, 'Best Original Score');
-INSERT INTO public.nagrada (id_nagrada, ime_nagrada) VALUES (3, 'Best Production Design');
-INSERT INTO public.nagrada (id_nagrada, ime_nagrada) VALUES (4, 'Best Performance by an Actor in a Supporting Role');
-INSERT INTO public.nagrada (id_nagrada, ime_nagrada) VALUES (5, 'Best Picture');
-INSERT INTO public.nagrada (id_nagrada, ime_nagrada) VALUES (6, 'Best Family Film');
-INSERT INTO public.nagrada (id_nagrada, ime_nagrada) VALUES (7, 'Peoples Choice Awards');
-INSERT INTO public.nagrada (id_nagrada, ime_nagrada) VALUES (8, 'Best Movie');
-INSERT INTO public.nagrada (id_nagrada, ime_nagrada) VALUES (9, 'Best Kiss');
-INSERT INTO public.nagrada (id_nagrada, ime_nagrada) VALUES (10, 'Best On-Screen Couple');
-INSERT INTO public.nagrada (id_nagrada, ime_nagrada) VALUES (11, 'Choice Summer Movie');
-INSERT INTO public.nagrada (id_nagrada, ime_nagrada) VALUES (12, 'Best Actress');
-INSERT INTO public.nagrada (id_nagrada, ime_nagrada) VALUES (13, 'Best Fight');
-INSERT INTO public.nagrada (id_nagrada, ime_nagrada) VALUES (14, 'Kids Choice Award for Favorite Movie Actress');
+INSERT INTO public.nagrada ( ime_nagrada) VALUES ( 'Academy Award for Best Visual Effects');
+INSERT INTO public.nagrada ( ime_nagrada) VALUES ( 'Best Original Score');
+INSERT INTO public.nagrada ( ime_nagrada) VALUES ( 'Best Production Design');
+INSERT INTO public.nagrada (ime_nagrada) VALUES ('Best Performance by an Actor in a Supporting Role');
+INSERT INTO public.nagrada ( ime_nagrada) VALUES ( 'Best Picture');
+INSERT INTO public.nagrada ( ime_nagrada) VALUES ( 'Best Family Film');
+INSERT INTO public.nagrada ( ime_nagrada) VALUES ( 'Peoples Choice Awards');
+INSERT INTO public.nagrada ( ime_nagrada) VALUES ( 'Best Movie');
+INSERT INTO public.nagrada (ime_nagrada) VALUES ( 'Best Kiss');
+INSERT INTO public.nagrada ( ime_nagrada) VALUES ( 'Best On-Screen Couple');
+INSERT INTO public.nagrada ( ime_nagrada) VALUES ( 'Choice Summer Movie');
+INSERT INTO public.nagrada ( ime_nagrada) VALUES ( 'Best Actress');
+INSERT INTO public.nagrada ( ime_nagrada) VALUES ( 'Best Fight');
+INSERT INTO public.nagrada ( ime_nagrada) VALUES ( 'Kids Choice Award for Favorite Movie Actress');
 
 
 --
 -- Data for Name: redatelji; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public.redatelji (ime_redatelj, prezime_redatelj, id_redatelj) VALUES ('Christopher', 'Nolan', 1);
-INSERT INTO public.redatelji (ime_redatelj, prezime_redatelj, id_redatelj) VALUES ('James', 'Cameron', 2);
-INSERT INTO public.redatelji (ime_redatelj, prezime_redatelj, id_redatelj) VALUES ('Chris', 'Columbus', 3);
-INSERT INTO public.redatelji (ime_redatelj, prezime_redatelj, id_redatelj) VALUES ('Shawn', 'Levy', 4);
-INSERT INTO public.redatelji (ime_redatelj, prezime_redatelj, id_redatelj) VALUES ('Catharine', 'Hardwick', 5);
-INSERT INTO public.redatelji (ime_redatelj, prezime_redatelj, id_redatelj) VALUES ('Bill', 'Condon', 6);
-INSERT INTO public.redatelji (ime_redatelj, prezime_redatelj, id_redatelj) VALUES ('David', 'Slade', 7);
-INSERT INTO public.redatelji (ime_redatelj, prezime_redatelj, id_redatelj) VALUES ('Richard', 'Curtis', 8);
-INSERT INTO public.redatelji (ime_redatelj, prezime_redatelj, id_redatelj) VALUES ('Quentin', 'Tarantino', 9);
-INSERT INTO public.redatelji (ime_redatelj, prezime_redatelj, id_redatelj) VALUES ('Marc', 'Webb', 10);
+INSERT INTO public.redatelji (ime_redatelj, prezime_redatelj) VALUES ('Christopher', 'Nolan');
+INSERT INTO public.redatelji (ime_redatelj, prezime_redatelj) VALUES ('James', 'Cameron');
+INSERT INTO public.redatelji (ime_redatelj, prezime_redatelj) VALUES ('Chris', 'Columbus');
+INSERT INTO public.redatelji (ime_redatelj, prezime_redatelj) VALUES ('Shawn', 'Levy');
+INSERT INTO public.redatelji (ime_redatelj, prezime_redatelj) VALUES ('Catharine', 'Hardwick');
+INSERT INTO public.redatelji (ime_redatelj, prezime_redatelj) VALUES ('Bill', 'Condon');
+INSERT INTO public.redatelji (ime_redatelj, prezime_redatelj) VALUES ('David', 'Slade');
+INSERT INTO public.redatelji (ime_redatelj, prezime_redatelj) VALUES ('Richard', 'Curtis');
+INSERT INTO public.redatelji (ime_redatelj, prezime_redatelj) VALUES ('Quentin', 'Tarantino');
+INSERT INTO public.redatelji (ime_redatelj, prezime_redatelj) VALUES ('Marc', 'Webb');
 
 
 --
@@ -417,46 +417,39 @@ INSERT INTO public.sniman_u (id_drzava, id_film) VALUES (2, 15);
 -- Data for Name: zarn; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public.zarn (ime_zarn, id_zarn) VALUES ('drama', 1);
-INSERT INTO public.zarn (ime_zarn, id_zarn) VALUES ('komedija', 2);
-INSERT INTO public.zarn (ime_zarn, id_zarn) VALUES ('sci-fi', 3);
-INSERT INTO public.zarn (ime_zarn, id_zarn) VALUES ('vestern', 4);
-INSERT INTO public.zarn (ime_zarn, id_zarn) VALUES ('akcija', 5);
-INSERT INTO public.zarn (ime_zarn, id_zarn) VALUES ('horor', 6);
-INSERT INTO public.zarn (ime_zarn, id_zarn) VALUES ('triler', 7);
-INSERT INTO public.zarn (ime_zarn, id_zarn) VALUES ('romansa', 8);
-INSERT INTO public.zarn (ime_zarn, id_zarn) VALUES ('krimić', 9);
-INSERT INTO public.zarn (ime_zarn, id_zarn) VALUES ('fikcija', 10);
-INSERT INTO public.zarn (ime_zarn, id_zarn) VALUES ('avanturistički', 11);
-INSERT INTO public.zarn (ime_zarn, id_zarn) VALUES ('mjuzikl', 12);
-INSERT INTO public.zarn (ime_zarn, id_zarn) VALUES ('dokumentarac', 13);
-INSERT INTO public.zarn (ime_zarn, id_zarn) VALUES ('ratni', 14);
-INSERT INTO public.zarn (ime_zarn, id_zarn) VALUES ('povijesni', 15);
+INSERT INTO public.zarn (ime_zarn) VALUES ('drama');
+INSERT INTO public.zarn (ime_zarn) VALUES ('komedija');
+INSERT INTO public.zarn (ime_zarn) VALUES ('sci-fi');
+INSERT INTO public.zarn (ime_zarn) VALUES ('vestern');
+INSERT INTO public.zarn (ime_zarn) VALUES ('akcija');
+INSERT INTO public.zarn (ime_zarn) VALUES ('horor');
+INSERT INTO public.zarn (ime_zarn) VALUES ('triler');
+INSERT INTO public.zarn (ime_zarn) VALUES ('romansa');
+INSERT INTO public.zarn (ime_zarn) VALUES ('krimić');
+INSERT INTO public.zarn (ime_zarn) VALUES ('fikcija');
+INSERT INTO public.zarn (ime_zarn) VALUES ('avanturistički');
+INSERT INTO public.zarn (ime_zarn) VALUES ('mjuzikl');
+INSERT INTO public.zarn (ime_zarn) VALUES ('dokumentarac');
+INSERT INTO public.zarn (ime_zarn) VALUES ('ratni');
+INSERT INTO public.zarn (ime_zarn) VALUES ('povijesni');
 
 
 --
 -- Name: drzava drzava_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public.drzava
-    ADD CONSTRAINT drzava_pkey PRIMARY KEY (id_drzava);
-
+ALTER TABLE public.drzava ADD COLUMN id_drzava SERIAL PRIMARY KEY;
 
 --
 -- Name: film film_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
-
-ALTER TABLE ONLY public.film
-    ADD CONSTRAINT film_pkey PRIMARY KEY (id_film);
-
+ALTER TABLE public.film ADD COLUMN id_film SERIAL PRIMARY KEY;
 
 --
 -- Name: glumci glumci_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public.glumci
-    ADD CONSTRAINT glumci_pkey PRIMARY KEY (id_glumac);
-
+ALTER TABLE public.glumci ADD COLUMN id_glumac SERIAL PRIMARY KEY;
 
 --
 -- Name: glumi_u glumi_u_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
@@ -493,18 +486,12 @@ ALTER TABLE ONLY public.je_zarn
 --
 -- Name: nagrada nagrada_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
-
-ALTER TABLE ONLY public.nagrada
-    ADD CONSTRAINT nagrada_pkey PRIMARY KEY (id_nagrada);
-
+ALTER TABLE public.nagrada ADD COLUMN id_nagrada SERIAL PRIMARY KEY;
 
 --
 -- Name: redatelji redatelji_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
-
-ALTER TABLE ONLY public.redatelji
-    ADD CONSTRAINT redatelji_pkey PRIMARY KEY (id_redatelj);
-
+ALTER TABLE public.redatelji ADD COLUMN id_redatelj SERIAL PRIMARY KEY;
 
 --
 -- Name: sniman_u sniman_u_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
@@ -517,10 +504,7 @@ ALTER TABLE ONLY public.sniman_u
 --
 -- Name: zarn zarn_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
-
-ALTER TABLE ONLY public.zarn
-    ADD CONSTRAINT zarn_pkey PRIMARY KEY (id_zarn);
-
+ALTER TABLE public.zarn ADD COLUMN id_zarn SERIAL PRIMARY KEY;
 
 --
 -- Name: glumi_u glumi_u_id_film_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
