@@ -35,14 +35,14 @@ paths:
                 items:
                   $ref: '#/components/schemas/Response'
     /actors:
-       get:
-      tags:
+      get:
+       tags:
         - developers
-      summary: returns all actors from database
-      operationId: searchInventory
-      description: |
-        By sending this request you can get all the movies in JSON format from Popularni_filmovi database
-      responses:
+       summary: returns all actors from database
+       operationId: searchInventory
+       description: |
+        By sending this request you can get all the actors in JSON format from Popularni_filmovi database
+       responses:
         '200':
           description: search results
           content:
@@ -51,15 +51,15 @@ paths:
                 type: object
                 items:
                   $ref: '#/components/schemas/Actors'
-     /directors:
-       get:
-      tags:
+    /directors:
+      get:
+       tags:
         - developers
-      summary: returns all directors from database
-      operationId: searchInventory
-      description: |
-        By sending this request you can get all the movies in JSON format from Popularni_filmovi database
-      responses:
+       summary: returns all directors from database
+       operationId: searchInventory
+       description: |
+        By sending this request you can get all the directors in JSON format from Popularni_filmovi database
+       responses:
         '200':
           description: search results
           content:
@@ -68,14 +68,14 @@ paths:
                 type: object
                 items:
                   $ref: '#/components/schemas/Directors'
-      /awards:
-        get:
-      tags:
-        - developers
-      summary: returns all awards from database
-      operationId: searchInventory
-      description: |
-        By sending this request you can get all the movies in JSON format from Popularni_filmovi database
+    /country:
+      get:
+        tags:
+          - developers
+        summary: returns all countries from database
+        operationId: searchInventory
+        description: |
+        By sending this request you can get all the counties in JSON format from Popularni_filmovi database
       responses:
         '200':
           description: search results
@@ -84,7 +84,7 @@ paths:
               schema:
                 type: object
                 items:
-                  $ref: '#/components/schemas/Awards'
+                  $ref: '#/components/schemas/Country'
 
     /movies/:{id}:
     get:
@@ -93,7 +93,7 @@ paths:
       summary: returns movie by id from database
       operationId: searchInventory
       description: |
-        By sending this request you can get the movies in JSON format from Popularni_filmovi database
+        By sending this request you can get the country by id in JSON format from Popularni_filmovi database
       responses:
         '200':
           description: search results
@@ -117,7 +117,7 @@ paths:
       summary: returns movie by id from database
       operationId: searchInventory
       description: |
-        By sending this request you can gupdatet the state in JSON format from Popularni_filmovi database
+        By sending this request you can update the state in JSON format from Popularni_filmovi database
       responses:
         '200':
           description: search results
@@ -166,7 +166,7 @@ paths:
                 items:
                   $ref: '#/components/schemas/Response'
 
-    /movies
+    /movies:
     post:
       tags:
         - admins
@@ -196,14 +196,17 @@ components:
       required:
         - status
         - message
+        - context
         - response
       properties:
         status:
           type: string
           example: 'OK'
         message:
-          type: string
+          type: object
           example:'Fetched all movies'
+        context:
+           $ref: '#/components/schemas/Context'
         response:
           $ref: '#/components/schemas/Movie'
     
@@ -290,18 +293,41 @@ components:
             prezime_glumac: 
               type: string
               example: 'Cubrick'
-        Awardss:
-          type: object
+      Context:
+        type: object
           required:
-            - ime_nagrada
-            -datum_osvajanja
+            -@vocab
           properties:
-            ime_nagrada: 
+            @vocab:
               type: string
-              example: 'Oscar'
-            datum_osvajanja: 
+              example:  "http://schema.org/"
+            glumci: 
               type: string
-              example: '2009-02-02'
+              example:  "actor"
+            ime_film:
+              type: string
+              example:  "name"
+            response:
+            type: string
+              example:  "movie"
+            ime_glumac: 
+              type: string
+              example: 'name'
+            prezime_glumac: 
+              type: string
+              example: 'family_name'
+            ime_redatelj: 
+              type: string
+              example: 'name'
+            prezime_redatelj: 
+              type: string
+              example: 'family_name'
+            id_drzava: 
+              type: string
+              example: 'identifier'
+             ime_drzava: 
+              type: string
+              example: 'name'
       
         
         

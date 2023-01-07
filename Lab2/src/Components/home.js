@@ -1,19 +1,18 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import DownloadFile from "./downloadFile";
+import Header from "./Header";
+
 import "./home.css";
+require('react-dom');
+window.React2 = require('react');
+console.log(window.React1 === window.React2);
+
+
 export default function Home() {
   return (
     <div>
-      <div class="header">
-        <div class="text">
-          <Link to="/">HOME</Link>
-        </div>
-        <div class="text">POPULARNI FILMOVI</div>
-        <div class="text">
-          <Link to="datatable">DATA TABLE</Link>
-        </div>
-      </div>
+      <Header />
       <div class="meta">
         <h1>Otvoren skup podatka o popularnim filmovima</h1>
         <div>

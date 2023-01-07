@@ -53,7 +53,7 @@ app.get('/movies/:id', db.getMovieById)
 
 app.get('/actors', db.getActors)
 app.get('/directors', db.getDirectors)
-app.get('/awards', db.getAwards)
+app.get('/country', db.getCountry)
 
 app.post('/movies', db.createMovie)
 app.put('/movies/:id', db.updateMovie)

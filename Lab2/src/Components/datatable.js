@@ -7,6 +7,9 @@ import "./table.css";
 import "primeicons/primeicons.css";
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.css";
+import { OidcSecure } from '@axa-fr/react-oidc';
+import Header from "./Header";
+
 
 import { FilterMatchMode, FilterOperator } from "primereact/api";
 
@@ -187,16 +190,10 @@ export default function Datatable() {
 
   const header2 = renderHeader2();
   return (
+    
+
     <div>
-      <div className="header">
-        <div className="text">
-          <Link to="/">HOME</Link>
-        </div>
-        <div className="text">POPULARNI FILMOVI</div>
-        <div className="text">
-          <Link to="datatable">DATA TABLE</Link>
-        </div>
-      </div>
+      <Header />
       <div className="card">
         <DataTable
           value={movies}
@@ -311,5 +308,6 @@ export default function Datatable() {
         </DataTable>
       </div>
     </div>
+
   );
 }
